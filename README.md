@@ -1,4 +1,4 @@
-# Using Git to Code, Collaborate and Share
+# Introduction to using Git and GitHub for software development
 
 This repository contains materials taught as part of the Imperial College
 Graduate School Course of the above title.
