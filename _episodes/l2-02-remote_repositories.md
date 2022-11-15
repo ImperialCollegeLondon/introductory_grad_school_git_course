@@ -1,6 +1,6 @@
 ---
 title: "Remote repositories"
-teaching: 20
+teaching: 15
 exercises: 20
 questions:
 - "Is my local repository the same as the remote one?"
@@ -11,15 +11,11 @@ objectives:
 - "Explain what *tracking* and *upstream* mean."
 - "Use the push command to send changes on the local branch to the remote one."
 - "Use the pull command to update your local branch with the remote one."
-- "Find out the available remote branches."
-- "Setup a local branch to track a new remote one."
 keypoints:
 - "origin is typically the name of the remote repository used by git."
 - "Local and remote repositories are not identical, in general."
 - "Local and remote repositories are not synchronized automatically."
 - "push and pull commands only affect the branch currently checked out."
-- "Only changes to a branch that are committed are pushed to the remote."
-- "Local branches need to be explicitly pushed to a new remote one in order to share them."
 ---
 
 ## Remote and local repositories
@@ -41,6 +37,8 @@ keypoints:
 - A local branch synchronised with a remote one is said to be **tracking** that
   remote branch.
 - The remote branch being tracked is called the **upstream branch**.
+- As mentioned, **we will be working in this course with the main branch only**, but the
+  concepts are applicable to all branches.
 
 ## Configuring repositories
 
@@ -64,13 +62,16 @@ local one out of it or the other way around, the steps are different.
 >   directory where you have your local repository - Then execute:
 >
 >```bash
->$ git remote add origin [address of your remote repo] 
-># The address should start with https:// and end in .git 
+>$ git remote add origin ADDRESS_OF_YOUR_REMOTE_REPO 
 >$ git push -u origin main
 >```
+> For example, for this course's repository, the address would be:
+> `https://github.com/ImperialCollegeLondon/introductory_grad_school_git_course.git`
+> In general, it is something like: `https://github.com/USERNAME/REPO_NAME.git`
+> 
 > **Mac and Linux users:** You will be asked to provide your GitHub username and password.
 > Enter your personal access token (PAT) as your password.   
-> **Windows users:** You will be presented with a CredentialHelperSelector dialog box. 
+> **Windows users:** You will be presented with a `CredentialHelperSelector` dialog box. 
 > Ensure "manager-core" is selected and check the box for "Always use this from now 
 > on". Press Select. From the next dialog select "Token" then paste the PAT you saved 
 > earlier and press "Sign in". On subsequent interactions with GitHub your credentials 
@@ -88,26 +89,25 @@ local one out of it or the other way around, the steps are different.
 > This involves the git command **clone**. Let's create a local copy of the
 > `example` repository you created remotely in the last episode.
 >
-> - On GitHub, the press down arrow in the far top right and choose "Your
->   repositories" from the drop-down menu.
+> - On GitHub, press the down arrow in the far top right, next to your picture, and choose
+>   "Your repositories" from the drop-down menu.
 > - Choose the `example` repository from the list.
 > - In the main screen of your repository, click on the green button on the
->   right, **Clone or Download**, and copy the address that appears there. 
+>   right, **Code**, and copy the address that appears in the `Clone` section. This
+>   should look similar to `https://github.com/YOUR_USERNAME/example.git`. 
 > - Open a new command line interface and execute the commands:
 >
 > ```bash
-> $ git clone [address of your remote repo]
+> $ git clone ADDRESS_OF_YOUR_REMOTE_REPO
 > $ cd example
 > ```
 > - This will download the remote repository to a new `example` directory, in
->   full, with all the information on the branches available in `origin` and all
->   the git history.
+>   full, with all the information on the branches available in `origin`, if any, and
+>   all the git history.
 > - By default, a local `main` branch will be created tracking the
 >   `origin/main` branch.
 > - You can find some information on the repository using the commands already
->   discussed in Lesson 1, like `git log` or `git branch -vv`, which should show
->   that there is indeed just
->   one branch, `main` tracking `origin/main`)
+>   discussed in Lesson 1, like `git log`.
 > ![Git collaborative]({{ site.baseurl }}/fig/clone.png "Effect of cloning a remote repository."){:class="img-responsive"}
 {: .challenge}
 
@@ -119,16 +119,8 @@ local one out of it or the other way around, the steps are different.
 - Changes in the staging area will not be synchronized.
 ![Git collaborative]({{ site.baseurl }}/fig/push.png "Push a branch
 ."){:class="img-responsive"}
-- If the current branch has no upstream yet, you can configure one by doing 
-`$ git push -u origin [branch_name]`, as done with `main` in the exercise
- above.
-![Git collaborative]({{ site.baseurl }}/fig/push_u.png "Push a branch without
- upstream yet."){:class="img-responsive"}
-- `push` only operates on your current branch. If you want to push another
- branch, you have to `checkout` that branch first.
 - If the upstream branch has changes you do not have in the local branch, the
- command will fail, requesting you to merge those changes first. We will
-  discuss this into more detail in the next episode.
+ command will fail, requesting you to `pull` those changes first (see below).
 
 > ## Pushing an updated README
 > You want to update the README file of the `example` repository with more
@@ -143,7 +135,7 @@ local one out of it or the other way around, the steps are different.
 > > ## Solution
 > > ```bash
 > > $ git add README.md
-> > $ git commit -m [Commit message]
+> > $ git commit -m COMMIT_MESSAGE
 > > $ git push
 > > ```
 > {: .solution}
@@ -151,26 +143,32 @@ local one out of it or the other way around, the steps are different.
 
 ## Pulling
 
-- Opposite to `push`, `pull` brings changes in the upstream branch to the local
+- Opposite to `git push`, `git pull` brings changes in the upstream branch to the local
  branch.
 - You can check if there are any changes to synchronize in the upstream
  branch by running `git fetch`, which only checks if there are changes, and then
-  `git status` to see how your local and remote branch compare in terms of
+  `git status` to see how your local and remote branches compare in terms of
    commit history.
 - It's best to make sure your repository is in a clean state with no staged or
-  unstaged changes.
-- If the local and upstream branches have diverged - have different
- commit history - the command will attempt to merge both, dealing with
-  conflicts as discussed in Lesson 1.
-- You can get a new branch existing only in `origin` directly with `git
- checkout [branch_name]` without the need of creating the branch locally and
-  then pulling the remote. 
+  unstaged changes - so, all changes committed.
 
 ![Git collaborative]({{ site.baseurl }}/fig/pull.png "Pull remote changes")
 {:class="img-responsive"}
 
+> ## Conflicts
+>
+> If the local and upstream branches have diverged - for example if you edited
+> something directly in the repository and also locally - the command will attempt to
+> merge both. This merging might be a smooth, transparent process - Git is pretty smart
+> when it comes to merging branches - but might also result in **conflicts** that need
+> to be resolved before proceeding. 
+> 
+> This is part of the scope of the intermediate Git and GitHub course that you can find
+> in https://imperialcollegelondon.github.io/intermediate_grad_school_git_course/ 
+{: .callout}
+
 > ## Pulling an updated README
-> When reviewing your new README file online, you have discover a typo and
+> When reviewing your new README file online, you have discovered a typo and
 > decided to correct it directly in GitHub. Modify the README file online and
 > then synchronise the changes with your local repository (tip: you can edit
 > any text file directly in GitHub by clicking in [the little pencil button](https://help.github.com/en/github/managing-files-in-a-repository/editing-files-in-your-repository) 
