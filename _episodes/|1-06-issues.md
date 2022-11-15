@@ -13,7 +13,7 @@ keypoints:
 - "Issues are a feature of GitHub which let you track work in a respository."
 - "GitHub provides functionality for referencing issues in comments"
 - "Task lists can be created to keep track of a list of issues"
-- "Formatting syntaxes, templates, and subscribing to issues help with communication efficiency"
+- "Formatting syntaxes, templates, and subscribing to issues help with communication"
 ---
 
 ## GitHub issues
