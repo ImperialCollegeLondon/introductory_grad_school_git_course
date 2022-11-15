@@ -89,7 +89,7 @@ local one out of it or the other way around, the steps are different.
 > This involves the git command **clone**. Let's create a local copy of the
 > `example` repository you created remotely in the last episode.
 >
-> - On GitHub, press down arrow in the far top right, next to your picture, and choose
+> - On GitHub, press the down arrow in the far top right, next to your picture, and choose
 >   "Your repositories" from the drop-down menu.
 > - Choose the `example` repository from the list.
 > - In the main screen of your repository, click on the green button on the
@@ -157,7 +157,7 @@ local one out of it or the other way around, the steps are different.
 
 > ## Conflicts
 >
-> If the local and upstream branches have diverged - for example if you editted
+> If the local and upstream branches have diverged - for example if you edited
 > something directly in the repository and also locally - the command will attempt to
 > merge both. This merging might be a smooth, transparent process - Git is pretty smart
 > when it comes to merging branches - but might also result in **conflicts** that need
