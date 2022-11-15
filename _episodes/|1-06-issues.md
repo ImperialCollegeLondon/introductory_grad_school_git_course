@@ -78,12 +78,14 @@ A particularly useful way of organising issues is by tracking them as part of a 
 > this." is often enough.
 {: .callout}
 
+[restrictions]: https://help.github.com/en/github/managing-your-work-on-github/assigning-issues-and-pull-requests-to-other-github-users
 > ## Closing issues
 > Let's see what happens when you close one of the first two issues you created earlier.
 > Open one of the issues you created earlier. Let's say you have addressed the content of the issue and are satisfied that it can now be considered dealt with. Find and click the `Close issue` button at the bottom of the issue. Now return to your task list issue and see if you can spot what is different.
 >> ## Solution
 >> In your task list issue you should find that one of the referenced issues now has a tick next to it, indicating that it is closed.
->> >> ![Task List With Closed Issue](../fig/issues4.png)
+>> ![Task List With Closed Issue](../fig/issues4.png)
+> {: .solution}
 {: .challenge}
 
 ## Communication is key
