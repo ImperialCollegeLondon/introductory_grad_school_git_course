@@ -87,7 +87,7 @@ A particularly useful way of organising issues is by tracking them as part of a 
 {: .challenge}
 
 ## Communication is key
-Opening issues and tagging them appropriately - such as as a question, bug, feature request, for example - is a much more useful and productive way of contributing to a repository than, say, sending the developer an email. Not only does it make use of the functionality of GitHub and the productivity benefits that entails, but it also means that it is likely found by someone in the future who has a similar query.
+Opening issues and tagging them appropriately - such as as a question, bug, feature request, for example - is a much more useful and productive way of contributing to a repository than, say, sending the developer an email. Not only does it make use of the functionality of GitHub and the productivity benefits that entails, but it also means that it is more likely to be found by someone in the future who has a similar query.
 
 > ### Templates
 > As a repository maintainer, there are ways you can you can encourage and help contributors to make meaningful issues. One way is to make use of templates. Templates provide a means to standardise the way in which information is povided in an issue. When a contributor wishes to create an issue on your repository, they can then select the appropriate template for their issue which provides them with guidance about what information should be present and how it should be presented. [Read more about using templates to encourage useful issues in the GitHub Docs.][github-templates]
