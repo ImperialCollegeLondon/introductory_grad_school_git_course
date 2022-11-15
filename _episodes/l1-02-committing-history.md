@@ -16,16 +16,16 @@ objectives:
 - List the commands that can be used to undo previous commits
 - Explain potential issues with rewriting the commit history
 keypoints:
-- Setup Git with your details using git config --global user.name "FIRST_NAME LAST_NAME" and git config --global user.email "email@example.com"
-- A git repository is the record of the history of a project and can be created with git init
+- Setup Git with your details using `git config --global user.name "FIRST_NAME LAST_NAME"` and `git config --global user.email "email@example.com"`
+- A Git repository is the record of the history of a project and can be created with `git init`
 - Git records changes to files as commits
-- Git must be explicitly told which changes to include as part of commit (known as staging changes) with git add [file]...
-- Staged changes can be stored in a commit with git commit -m "commit message"
-- You can check which files have been changed and/or staged with git status
-- You can see the full changes made to files with git diff for unstaged files and git diff --staged
-- The commit history of a repository can be checked with git log
-- The command git revert commit_ref creates a new commit which undoes the changes of the specified commit
-- The command git reset --soft HEAD^ removes the previous commit from the history
+- Git must be explicitly told which changes to include as part of commit (known as staging changes) with `git add [file]...`
+- Staged changes can be stored in a commit with `git commit -m "commit message"`
+- You can check which files have been changed and/or staged with `git status`
+- You can see the full changes made to files with `git diff` for unstaged files and `git diff --staged`
+- The commit history of a repository can be checked with `git log`
+- The command `git revert commit_ref` creates a new commit which undoes the changes of the specified commit
+- The command `git reset --soft HEAD^` removes the previous commit from the history
 ---
 
 ## First Things First
@@ -55,9 +55,9 @@ to perform the above commands once for each new computer Git is installed on.
 
 > ## The Command Line Interface
 >
-> For users not generally familiar with using command line interfaces its worth
+> For users not generally familiar with using command line interfaces it's worth
 > taking a moment to consider the commands that were just run. To understand
-> what we just did lets break down the first command:
+> what we just did let's break down the first command:
 > 1. `git`
 >   * This simply indicates to the command line that we want to something with
 >     Git.
@@ -93,7 +93,7 @@ to perform the above commands once for each new computer Git is installed on.
 > explanation here](https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings).
 {: .callout}
 
-Now that Git is ready to use lets see how to start using it with a new
+Now that Git is ready to use let's see how to start using it with a new
 project. In Git terminology a project is called a repository (frequently
 shortened to repo).
 
@@ -120,7 +120,7 @@ free to open `ingredients.md` and `instructions.md` and take a look at them (use
 a normal file browser if you're not comfortable doing this on the command
 line). Files with a `.md` extension are using a format called Markdown, don't
 worry about this now, for our immediate purposes these are just text files. Use
-of Markdown and Github will come up in the next session however.
+of Markdown and GitHub will come up in the next session however.
 
 To start using Git with our recipe we need to create a repository for it. Make
 sure the current working directory for your terminal is `recipe` and run:
@@ -138,7 +138,7 @@ The path you see in the output will vary depending on your operating system.
 > ## `master` and `main` branches
 > A branch is a specific version of the state and history of the work in the repo.
 > Traditionally, the default branch name whenever you `init` a repository was `master`.
-> However, the sensitivity of the online community has shifted lately and some tools,
+> However, the awareness of the online community has improved lately and some tools,
 > like GitHub, use now `main` as the default name instead. You can read the rationale
 > in [this link](https://www.theserverside.com/feature/Why-GitHub-renamed-its-master-branch-to-main).
 >
@@ -159,7 +159,7 @@ The path you see in the output will vary depending on your operating system.
 > ~~~
 > {: .commands}
 >
-> Depending on you exact version of git, you might get an error like the following when
+> Depending on your exact version of git, you might get an error like the following when
 > trying to rename the branch:
 >
 > ~~~
@@ -173,8 +173,8 @@ The path you see in the output will vary depending on your operating system.
 > Ultimately, you can simply create a separate branch called `main` and use that one as
 > your default branch rather than `master`, which you can then delete.
 >
-> We will use `main` as the default branch name throught the workshop. Branches will be
-> covered in detail in Intermediate Git and GitHub for Effective Collaboration.
+> We will use `main` as the default branch name throughout the workshop. Branches will
+> be covered in detail in [our intermediate Git course](https://imperialcollegelondon.github.io/intermediate_grad_school_git_course/).
 {: .callout}
 
 ## Creating The First Snapshot
@@ -262,7 +262,7 @@ nothing to commit, working tree clean
 {: .output}
 
 The output we get now is very minimal. This highlights an important point about
-the status command - it's purpose is to report on changes in the repository
+the status command - its purpose is to report on changes in the repository
 **relative to the last commit**. In order to see the commits made in a project
 we can use:
 
@@ -336,7 +336,7 @@ different git areas and the commands seen so far"){:class="img-responsive"}
 
 > ## Why stage?
 >
-> The last exercises highlights the reason Git use a staging area before making
+> The last exercise highlights the reason Git uses a staging area before making
 > commits. You can make file changes as you want all at once and then group them
 > together logically to make individual commits. We'll see why having only sets
 > of related changes for a specific purpose in a single commit is so useful
@@ -476,7 +476,7 @@ into the staging area.
 
 From here we can choose what to do. We could stage some additional changes and
 create a new commit, or we could unstage ingredients.md and do something else
-entirely. For now lets just restore the commit we removed by committing again:
+entirely. For now let's just restore the commit we removed by committing again:
 ~~~
 $ git commit -m "Added 1/2 onion to ingredients"
 ~~~
@@ -496,7 +496,7 @@ $ git commit -m "Added 1/2 onion to ingredients"
 
 Sometimes after making a commit we later (sometimes multiple commits later)
 realise that it was misguided and should not have been included. For instance,
-it's a bit of cliche to tell people to "enjoy" at the end of a recipe, so lets
+it's a bit of cliche to tell people to "enjoy" at the end of a recipe, so let's
 get rid of it with:
 ~~~
 $ git revert --no-edit [commit-hash]
@@ -533,7 +533,7 @@ Date:   Tue Dec 31 14:55:52 2019 +0000
 Using `git revert` has added a new commit which reverses the changes made in the
 specified commit.
 
-This is a good example of why making seperate commits for each change is a good
+This is a good example of why making separate commits for each change is a good
 idea. If we had committed the changes to both `ingredients.md` and
 `instructions.md` at once we would not have been able to revert just the enjoy
 instruction.
