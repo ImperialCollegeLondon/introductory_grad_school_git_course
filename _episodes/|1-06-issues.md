@@ -29,7 +29,7 @@ The following figure shows some of the issues open in a certain repository. The 
  ![Git collaborative]({{ site.baseurl }}/fig/issues1.png "Example of issues."){:class="img -responsive"}
 
 ## Creating GitHub issues
-It is possible to create issues in a number of ways (see the GitHub docs page on [creating issues][github-creating-issues] to learn about the various methods). One of the most common and simplist methods is to create an issue from a repository. This can be done by navigating to the main page of the repository on GitHub and click on `Issues`, then click on the `New Issue` button.
+It is possible to create issues in a number of ways (see the GitHub docs page on [creating issues][github-creating-issues] to learn about the various methods). One of the most common and simplest methods is to create an issue from a repository. This can be done by navigating to the main page of the repository on GitHub and click on `Issues`, then click on the `New Issue` button.
 
 > ## Create two new issues
 > Follow the information above to create two new issues in your example repository. It doesn't matter what the issue title or contents are at this stage while we are learning how to create issues, but generally this is an important, and you should always refer to a repository's contributing guidelines for how to construct your issue. For now some simple example titles such as "Fix bug" and "Create Feature" will suffice. Try adding some labels to your issues and assigning yourself.
