@@ -61,6 +61,13 @@ repositories can become complex, e.g.:
 You wouldn't want to try to visualise this in your terminal, any more than you would a
 Tube map.
 
+(If you're wondering how a repository's history can end up looking so complicated, it's
+because of a feature we aren't covering in this course in detail called branching. For
+those who are interested, [it is covered in the intermediate-level Git
+course][intermediate-branching].)
+
+[intermediate-branching]: https://imperialcollegelondon.github.io/intermediate_grad_school_git_course/l1-02-branching-merging/index.html
+
 ## Getting started with GitKraken
 
 Firstly, you will need to download and install GitKraken, which can be obtained
