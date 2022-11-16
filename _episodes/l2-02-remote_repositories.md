@@ -50,7 +50,7 @@ local one out of it or the other way around, the steps are different.
 > In this case, you have a local repository and you want to synchronise it with
 > a new, remote one. Let's create a remote for the `recipe` repository you
 > worked on in Lesson 1. If you have lost your copy of the `recipe` repository
-> you can download a completed copy [here](../code/recipe_complete.zip):
+> you can download a completed copy [here](../code/recipe_with_history.zip):
 >
 > - Create a new repository in GitHub, as in the last episode. Give it a name,
 >   description and choose if it should be public or private, but do not add any
@@ -62,20 +62,20 @@ local one out of it or the other way around, the steps are different.
 >   directory where you have your local repository - Then execute:
 >
 >```bash
->$ git remote add origin ADDRESS_OF_YOUR_REMOTE_REPO 
+>$ git remote add origin ADDRESS_OF_YOUR_REMOTE_REPO
 >$ git push -u origin main
 >```
 > For example, for this course's repository, the address would be:
 > `https://github.com/ImperialCollegeLondon/introductory_grad_school_git_course.git`
 > In general, it is something like: `https://github.com/USERNAME/REPO_NAME.git`
-> 
+>
 > **Mac and Linux users:** You will be asked to provide your GitHub username and password.
-> Enter your personal access token (PAT) as your password.   
-> **Windows users:** You will be presented with a `CredentialHelperSelector` dialog box. 
-> Ensure "manager-core" is selected and check the box for "Always use this from now 
-> on". Press Select. From the next dialog select "Token" then paste the PAT you saved 
-> earlier and press "Sign in". On subsequent interactions with GitHub your credentials 
-> will be remembered and you will not be prompted. 
+> Enter your personal access token (PAT) as your password.
+> **Windows users:** You will be presented with a `CredentialHelperSelector` dialog box.
+> Ensure "manager-core" is selected and check the box for "Always use this from now
+> on". Press Select. From the next dialog select "Token" then paste the PAT you saved
+> earlier and press "Sign in". On subsequent interactions with GitHub your credentials
+> will be remembered and you will not be prompted.
 >
 >- The first line above will set the GitHub repository as the remote for your
 > local one, calling it `origin`.
@@ -94,7 +94,7 @@ local one out of it or the other way around, the steps are different.
 > - Choose the `example` repository from the list.
 > - In the main screen of your repository, click on the green button on the
 >   right, **Code**, and copy the address that appears in the `Clone` section. This
->   should look similar to `https://github.com/YOUR_USERNAME/example.git`. 
+>   should look similar to `https://github.com/YOUR_USERNAME/example.git`.
 > - Open a new command line interface and execute the commands:
 >
 > ```bash
@@ -161,17 +161,17 @@ local one out of it or the other way around, the steps are different.
 > something directly in the repository and also locally - the command will attempt to
 > merge both. This merging might be a smooth, transparent process - Git is pretty smart
 > when it comes to merging branches - but might also result in **conflicts** that need
-> to be resolved before proceeding. 
-> 
+> to be resolved before proceeding.
+>
 > This is part of the scope of the intermediate Git and GitHub course that you can find
-> in https://imperialcollegelondon.github.io/intermediate_grad_school_git_course/ 
+> in https://imperialcollegelondon.github.io/intermediate_grad_school_git_course/
 {: .callout}
 
 > ## Pulling an updated README
 > When reviewing your new README file online, you have discovered a typo and
 > decided to correct it directly in GitHub. Modify the README file online and
 > then synchronise the changes with your local repository (tip: you can edit
-> any text file directly in GitHub by clicking in [the little pencil button](https://help.github.com/en/github/managing-files-in-a-repository/editing-files-in-your-repository) 
+> any text file directly in GitHub by clicking in [the little pencil button](https://help.github.com/en/github/managing-files-in-a-repository/editing-files-in-your-repository)
 > in the upper right corner).
 >
 > > ## Solution
@@ -180,11 +180,11 @@ local one out of it or the other way around, the steps are different.
 > > $ git status
 > > ```
 > > This will indicate that the remote branch is ahead of your local branch
-> by 1 commit. Since there are no diverging commits, it is safe to pull. 
+> by 1 commit. Since there are no diverging commits, it is safe to pull.
 > > ```bash
 > > $ git pull
 > > ```
 > {: .solution}
 {: .challenge}
-  
+
 {% include links.md %}
