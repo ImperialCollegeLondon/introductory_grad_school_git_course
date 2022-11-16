@@ -184,6 +184,32 @@ commits. Stage one of the files, add a commit message and click "Commit changes"
 
 Now upload your changes to GitHub by pressing the "Push" button.
 
+## Going further
+
+> ## Exercise: Explore GitKraken yourself
+>
+> This final exercise is a change for you to play around and familiarise yourself with
+> the interface. You could try repeating some of the tasks you completed previously
+> using the command line (such as reverting a commit). There is a table below showing
+> how you carry out these operations using GitKraken.
+>
+> You could also try creating a new repository on GitHub using GitKraken.
+>
+> There is also a useful series of tutorials [in the GitKraken user
+> guide][gitkraken-guide].
+{: .challenge}
+
+[gitkraken-guide]: https://help.gitkraken.com/gitkraken-client/guide/
+
+| Git command  | GitKraken equivalent                                                                    |
+|--------------|-----------------------------------------------------------------------------------------|
+| `git add`    | Click on pencil icon by changes, then "Stage" or "Stage all changes"                    |
+| `git commit` | After staging, enter a commit message then click "Commit changes"                       |
+| `git push`   | Click the "Push" button in the toolbar                                                  |
+| `git revert` | Right-click on commit and click "Revert commit"                                         |
+| `git init`   | Click "File" then "Init Repo" (choose GitHub.com to create remote)                      |
+| `git status` | Look at the top of the commit list and you can see if there are  uncommitted files etc. |
+
 ## Creating your first repository with GitKraken
 
 Let's start by creating a repository like you did before, just so you can familiarise
