@@ -141,6 +141,49 @@ repository's history.
 
 [intermediate-course]: https://imperialcollegelondon.github.io/intermediate_grad_school_git_course/
 
+## Modifying your repository
+
+In this next section, you will make some more changes to your repository.
+
+Return to your text editor/IDE and make the following changes:
+
+- `ingredients.md`: Add "1 clove of garlic, chopped" to the list
+- `instructions.md`: Change the instruction "and mix well" to "and mix thoroughly"
+
+Now return to GitKraken and you should see that there is a yellow pencil icon with a "2"
+next to it:
+
+![]({{ site.baseurl }}/fig/gui_modifying1.png "Modified files")
+
+This indicates that two files have been modified since the last commit and that they are
+not staged.
+
+Click on this line with the yellow pencil and GitKraken will show you which files were
+changed:
+
+![]({{ site.baseurl }}/fig/gui_modifying2_unstaged_changes.png "View unstaged changes")
+
+If you click on each of the files you can see how they were changed.
+
+Note that there is a button to stage each file individually and one to stage them both
+at once. If you accidentally stage a file, there is a corresponding "unstage" button for
+individual files.
+
+As we have made two changes that are essentially unrelated, let's make two separate
+commits. Stage one of the files, add a commit message and click "Commit changes":
+
+![]({{ site.baseurl }}/fig/gui_modifying3_commit_changes.png "Commit changes")
+
+> ## Exercise: Add the other commit by yourself
+>
+> Stage the file, enter an appropriate message and commit it.
+>
+> GitKraken allows you to add a one-line summary as well as a longer description, so add
+> one here. How does it appear when you view the commit with `git log`?
+{: .challenge}
+
+Now upload your changes to GitHub by pressing the "Push" button.
+
 ## Creating your first repository with GitKraken
 
 Let's start by creating a repository like you did before, just so you can familiarise
