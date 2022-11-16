@@ -20,7 +20,7 @@ This course will cover:
 * Using Git to track changes in your code
 * How to prepare your code for publication
 * Publishing your code using GitHub
-* Using Git with graphical user interfaces (GUIs) and within integrated developement environments (IDEs)
+* Using Git with graphical user interfaces (GUIs) and within integrated development environments (IDEs)
 * Using GitHub for effective project management
 
 This course (particularly the first half) is closely based on this [Code
