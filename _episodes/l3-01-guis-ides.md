@@ -7,11 +7,16 @@ questions:
 - "What tools are available for using Git?"
 - "When is it better to use each method of interacting with Git?"
 objectives:
-- "TODO"
-- "TODO"
+- "Use GitKraken to examine your commit history"
+- "Add a commit with GitKraken"
+- "Use GitKraken to carry out other tasks, such as reverting and pushing to GitHub"
 keypoints:
-- "TODO"
-- "TODO"
+- "Knowing how to use Git from the command-line is useful for understanding concepts and
+  as a fallback"
+- "Text editors and IDEs often have built-in Git support"
+- "GUIs are particularly useful for viewing the graph-like structure of a repository"
+- "It is worth taking time to explore other tools for Git so you can find a workflow
+  that suits you"
 ---
 
 ## Background
