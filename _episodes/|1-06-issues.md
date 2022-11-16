@@ -43,10 +43,8 @@ It is possible to create issues in a number of ways (see the GitHub docs page on
 [github-creating-issues]: https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue
 
 > ## Mentioning other issues
-> All issues receive a tag number starting at 1 and preceded by #, 
-> like #40 or #110. If you want to refer to an issue in any comment
-> anywhere in GitHub, just use its tag number and these will be automatically
-> linked from the comment.
+> All issues receive a tag number starting at 1 and preceded by # like #40 or #110. If you want to refer to an issue in any comment anywhere in GitHub, just use its tag number and these will be automatically linked from the comment.
+> It is slightly different if you want to mention an issue from another repository; Simply paste the URL of that issue and GitHub will usually format this nicely for you. You can always check out the `Preview` tab at the top of the edit box when writing a comment or issue to preview how the formatting will look.
 {: .callout}
 
 ## Keeping track of your work with task lists
