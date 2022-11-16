@@ -92,6 +92,55 @@ Profile". Here's what it looks like for me:
 
 You're now ready to roll!
 
+## Examining your existing repository
+
+Let's start by examining the `recipe` repository you've been working on. Open GitKraken
+and click "File", then "Open Repo".
+
+![]({{ site.baseurl }}/fig/gui_open_repo1_menu.png "Open your existing repository")
+
+You should see something like the following:
+
+![]({{ site.baseurl }}/fig/gui_open_repo2_window.png "View recipe repository")
+
+(If your window doesn't show all of these features, you may need to click on tabs etc.
+to make them visible.)
+
+For the most part, based on your understanding of Git, you should be able to understand
+most of the features in this window, namely:
+
+- In the middle of the screen you have your commit history
+- On the left-hand side you can see your local `main` branch and the remote one too
+  (note the GitHub logo to indicate that it's a remote)
+- On the left-hand side, you also have a button to display your GitHub issues (I
+  currently don't have any for this repository)
+- On the right-hand side you have details about the current commit (the description,
+  author, which files were changed etc.)
+
+(Don't worry about the other buttons on the left-hand side for now. They aren't covered
+in this course, but are in [the intermediate-level Git course][intermediate-course].)
+
+Now click on "instructions.md" in GitKraken (under where it says "1 modified"). You
+should now be able to see what changes were made to the file in the the last commit:
+
+![]({{ site.baseurl }}/fig/gui_examine_changed_file.png)
+
+Green lines indicate new text and red ones indicate removed text. In this case, as just
+the "enjoy" instruction at the end of the file was removed, Git has interpreted this the
+line being removed and replaced with an empty one.
+
+Click the cross in the central pane to close this view and return to a view of the
+repository's history.
+
+> ## Exercise: Examine some more of your repository's history
+>
+> Try examining some more of the history to familiarise yourself with the interface.
+> Click on a commit to view details about it. Then click on one of the modified files to
+> remind yourself what changes you made.
+{: .challenge}
+
+[intermediate-course]: https://imperialcollegelondon.github.io/intermediate_grad_school_git_course/
+
 ## Creating your first repository with GitKraken
 
 Let's start by creating a repository like you did before, just so you can familiarise
