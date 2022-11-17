@@ -10,15 +10,18 @@ You will learn to track the changes you made to your code and when you made them
 
 Beyond working on your own code, understanding Git allows usage of online code repositories such as GitHub.
 Using an online repository to publish your code is a great way to disseminate your research and a necessary step to collaborate with others.
-This course will demonstrate how to publish code to Github, while the [Intermediate course](TODO_LINK) introduces more features that make it a productive collaborative environment.
+This course will demonstrate how to publish code to GitHub, while the [Intermediate course][intermediate-course] introduces more features that make it a productive collaborative environment.
+
+[intermediate-course]: https://imperialcollegelondon.github.io/intermediate_grad_school_git_course/
 
 This course will cover:
 
 * An introduction to Git concepts and terminology
 * Using Git to track changes in your code
 * How to prepare your code for publication
-* Publishing your code using Github
-* Using Git with graphical user interfaces (GUIs) and integrated developer environments (IDEs)
+* Publishing your code using GitHub
+* Using Git with graphical user interfaces (GUIs) and within integrated development environments (IDEs)
+* Using GitHub for effective project management
 
 This course (particularly the first half) is closely based on this [Code
 Refinery lesson](https://coderefinery.github.io/git-intro/).
