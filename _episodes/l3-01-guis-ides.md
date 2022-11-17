@@ -61,7 +61,7 @@ section.
 So far, your `recipe` repository is fairly simple, but it is worth noting that
 repositories can become complex, e.g.:
 
-![]({{ site.baseurl }}/fig/gui_complex_repo.png "Example of a complex repository")
+![Example of a complex repository]({{ site.baseurl }}/fig/gui_complex_repo.png "Example of a complex repository")
 
 You wouldn't want to try to visualise this in your terminal, any more than you would a
 Tube map.
@@ -83,7 +83,7 @@ GitKraken app with your GitHub account, so that you can make use of its GitHub
 integration. While this is technically optional, we strongly recommend it. So, when you
 start GitKraken, click "Sign up with GitHub":
 
-![]({{ site.baseurl }}/fig/gui_sign_up1.png "Sign up with GitHub")
+![Sign up for GitKraken with GitHub account]({{ site.baseurl }}/fig/gui_sign_up1.png "Sign up for GitKraken with GitHub account")
 
 This should open a browser window in which you will have to sign in with GitHub. Once
 this is complete GitKraken should log in automatically. If not, you may have to copy the
@@ -93,7 +93,7 @@ Next, GitKraken will ask you to supply information about who you are, as you did
 you first started with Git. Enter your name and email address, then click "Create
 Profile". Here's what it looks like for me:
 
-![]({{ site.baseurl }}/fig/gui_sign_up2_create_profile.png "Create a profile")
+![Creating a GitKraken profile]({{ site.baseurl }}/fig/gui_sign_up2_create_profile.png "Creating a GitKraken profile")
 
 You're now ready to roll!
 
@@ -102,11 +102,11 @@ You're now ready to roll!
 Let's start by examining the `recipe` repository you've been working on. Open GitKraken
 and click "File", then "Open Repo".
 
-![]({{ site.baseurl }}/fig/gui_open_repo1_menu.png "Open your existing repository")
+![Opening an existing repository in GitKraken]({{ site.baseurl }}/fig/gui_open_repo1_menu.png "Opening an existing repository in GitKraken")
 
 You should see something like the following:
 
-![]({{ site.baseurl }}/fig/gui_open_repo2_window.png "View recipe repository")
+![Viewing the recipe repository in GitKraken]({{ site.baseurl }}/fig/gui_open_repo2_window.png "Viewing the recipe repository in GitKraken")
 
 (If your window doesn't show all of these features, you may need to click on tabs etc.
 to make them visible.)
@@ -128,7 +128,7 @@ in this course, but are in [the intermediate-level Git course][intermediate-cour
 Now click on "instructions.md" in GitKraken (under where it says "1 modified"). You
 should now be able to see what changes were made to the file in the the last commit:
 
-![]({{ site.baseurl }}/fig/gui_examine_changed_file.png)
+![Examining file modifications in GitKraken]({{ site.baseurl }}/fig/gui_examine_changed_file.png "Examining file modifications in GitKraken")
 
 Green lines indicate new text and red ones indicate removed text. In this case, as just
 the "enjoy" instruction at the end of the file was removed, Git has interpreted this the
@@ -158,7 +158,7 @@ Return to your text editor/IDE and make the following changes:
 Now return to GitKraken and you should see that there is a yellow pencil icon with a "2"
 next to it:
 
-![]({{ site.baseurl }}/fig/gui_modifying1.png "Modified files")
+![Viewing modified files in GitKraken]({{ site.baseurl }}/fig/gui_modifying1.png "Viewing modified files in GitKraken")
 
 This indicates that two files have been modified since the last commit and that they are
 not staged.
@@ -166,7 +166,7 @@ not staged.
 Click on this line with the yellow pencil and GitKraken will show you which files were
 changed:
 
-![]({{ site.baseurl }}/fig/gui_modifying2_unstaged_changes.png "View unstaged changes")
+![Viewing unstaged changes in GitKraken]({{ site.baseurl }}/fig/gui_modifying2_unstaged_changes.png "Viewing unstaged changes in GitKraken")
 
 If you click on each of the files you can see how they were changed.
 
@@ -177,7 +177,7 @@ individual files.
 As we have made two changes that are essentially unrelated, let's make two separate
 commits. Stage one of the files, add a commit message and click "Commit changes":
 
-![]({{ site.baseurl }}/fig/gui_modifying3_commit_changes.png "Commit changes")
+![Committing changes in GitKraken]({{ site.baseurl }}/fig/gui_modifying3_commit_changes.png "Committing changes in GitKraken")
 
 > ## Exercise: Add the other commit by yourself
 >

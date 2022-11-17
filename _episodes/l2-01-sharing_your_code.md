@@ -248,7 +248,7 @@ See [GitHub Help: Setting guidelines for repository contributors][contributors].
 >
 > > ## Solution
 > > Your repository is now ready and you should see something similar to this:
-> > ![New Repository](../fig/new_repo.jpg)
+> > ![Screenshot of the new repository in GitHub]({{ site.baseurl }}/fig/new_repo.jpg "Screenshot of the new repository in GitHub")
 > > It tells you there is only 1 commit, 1 branch and 1 contributor, the type
 > > of licence you have chosen and also that there are two files: LICENSE and
 > > README.md, which is also rendered immediately below.

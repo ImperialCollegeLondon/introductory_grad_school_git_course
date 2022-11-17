@@ -26,7 +26,7 @@ keypoints:
 
 The following figure shows some of the issues open in a certain repository. The labels tell us there are a couple of bug reports, a couple of issues related to the performance of the software and several ones that are simple enough to be tackled by novice people. Most of them have some discussion going on.
 
- ![Git collaborative]({{ site.baseurl }}/fig/issues1.png "Example of issues."){:class="img -responsive"}
+ ![Example of GitHub issues]({{ site.baseurl }}/fig/issues1.png "Example of GitHub issues"){:class="img-responsive"}
 
 ## Creating GitHub issues
 It is possible to create issues in a number of ways (see the GitHub docs page on [creating issues][github-creating-issues] to learn about the various methods). One of the most common and simplest methods is to create an issue from a repository. This can be done by navigating to the main page of the repository on GitHub and click on `Issues`, then click on the `New Issue` button.
@@ -35,7 +35,7 @@ It is possible to create issues in a number of ways (see the GitHub docs page on
 > Follow the information above to create two new issues in your example repository. It doesn't matter what the issue title or contents are at this stage while we are learning how to create issues, but generally this is an important, and you should always refer to a repository's contributing guidelines for how to construct your issue. For now some simple example titles such as "Fix bug" and "Create Feature" will suffice. Try adding some labels to your issues and assigning yourself.
 >> ## Solution
 >> You have created two new issues and your issues page should look something like this:
->> ![New Issues](../fig/issues2.png)
+>> ![Two newly created issues]({{ site.baseurl }}/fig/issues2.png "Two newly created issues")
 >> Notice the labels have been added next to the issue title, and the assignees' profile pictures are visible too.
 > {: .solution}
 {: .challenge}
@@ -56,7 +56,7 @@ A particularly useful way of organising issues is by tracking them as part of a 
 > Try creating a new issue which contains a task list. To create a task list in the body of an issue, preface list items with hyphen and space followed by `[ ]`. To mark a task as complete, use `[x]`. Create two items in your task list, one for each of the the issues you created earlier. Try referencing the two previously created issues by using a hash followed by the number of the issue e.g. `#2`. (GitHub may prompt you to select an issue as soon as you type a hash)
 >> ## Solution
 >> You should now have a third issue which contains a task list which references the two issues you created earlier.
->> ![Task List](../fig/issues3.png)
+>> ![Creating a task list]({{ site.baseurl }}/fig/issues3.png "Creating a task list")
 > {: .solution}
 {: .challenge}
 
@@ -82,7 +82,7 @@ A particularly useful way of organising issues is by tracking them as part of a 
 > Open one of the issues you created earlier. Let's say you have addressed the content of the issue and are satisfied that it can now be considered dealt with. Find and click the `Close issue` button at the bottom of the issue. Now return to your task list issue and see if you can spot what is different.
 >> ## Solution
 >> In your task list issue you should find that one of the referenced issues now has a tick next to it, indicating that it is closed.
->> ![Task List With Closed Issue](../fig/issues4.png)
+>> ![Task list with a closed issue](../fig/issues4.png "Task list with a closed issue")
 > {: .solution}
 {: .challenge}
 

@@ -306,8 +306,7 @@ this in more detail it's useful to know that git has three 'areas'.
 
 The relationship between the commands we've seen so far and the different areas
 of Git are show below:
-![Linear]({{ site.baseurl }}/fig/git_areas.png "Relationship between the
-different git areas and the commands seen so far"){:class="img-responsive"}
+![Relationship between the different git areas and the commands seen so far]({{ site.baseurl }}/fig/git_areas.png "Relationship between the different git areas and the commands seen so far"){:class="img-responsive"}
 
 > ## Exercise: Create some more commits
 >
