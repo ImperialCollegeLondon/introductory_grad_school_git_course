@@ -10,7 +10,7 @@ objectives:
 - "How to claim issues."
 - "Learn how to use GitHub functionality to effectively communicate who is working on what."
 keypoints:
-- "Issues are a feature of GitHub which let you track work in a respository."
+- "Issues are a feature of GitHub which let you track work in a repository."
 - "GitHub provides functionality for referencing issues in comments"
 - "Task lists can be created to keep track of a list of issues"
 - "Formatting syntaxes, templates, and subscribing to issues help with communication"
@@ -90,12 +90,12 @@ A particularly useful way of organising issues is by tracking them as part of a 
 Opening issues and tagging them appropriately - such as as a question, bug, feature request, for example - is a much more useful and productive way of contributing to a repository than, say, sending the developer an email. Not only does it make use of the functionality of GitHub and the productivity benefits that entails, but it also means that it is more likely to be found by someone in the future who has a similar query.
 
 > ### Templates
-> As a repository maintainer, there are ways you can encourage and help contributors to make meaningful issues. One way is to make use of templates. Templates provide a means to standardise the way in which information is povided in an issue. When a contributor wishes to create an issue on your repository, they can then select the appropriate template for their issue which provides them with guidance about what information should be present and how it should be presented. [Read more about using templates to encourage useful issues in the GitHub Docs.][github-templates]
+> As a repository maintainer, there are ways you can encourage and help contributors to make meaningful issues. One way is to make use of templates. Templates provide a means to standardise the way in which information is provided in an issue. When a contributor wishes to create an issue on your repository, they can then select the appropriate template for their issue which provides them with guidance about what information should be present and how it should be presented. [Read more about using templates to encourage useful issues in the GitHub Docs.][github-templates]
 
 [github-templates]: https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/about-issue-and-pull-request-templates
 
 > ### Mentions
-> @mention-ing collaborators can be a convenient way to draw their attention to a comment. Anyone you @ must first have access to your respository. Similarly, we saw above how we can use `#` to link related issues in a comment. Combining these simple yet powerful formatting syntaxes can greatly improve communication efficiency - certainly in line with GitHub best practices.
+> @mention-ing collaborators can be a convenient way to draw their attention to a comment. Anyone you @ must first have access to your repository. Similarly, we saw above how we can use `#` to link related issues in a comment. Combining these simple yet powerful formatting syntaxes can greatly improve communication efficiency - certainly in line with GitHub best practices.
 
 > ### Staying up to date
 > You can keep track of recent comments in an issue by subscribing to an issue so that you receive notifications about latest comments and developments in that issue. Notifications and links to issues you're subscribed to can be found on your GitHub dashboard.

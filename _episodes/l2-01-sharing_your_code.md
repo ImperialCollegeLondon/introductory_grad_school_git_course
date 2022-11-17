@@ -63,7 +63,7 @@ Create a Personal Access Token (PAT):
 
 1. In order to access GitHub from the command line, you will need a PAT.
 2. Follow the instructions [here][pat-instructions] to generate one. Ensure that "repo" is ticked.
-3. Keep the PAT safe, once you nagivate away from the page you won't be able to view it again.
+3. Keep the PAT safe, once you navigate away from the page you won't be able to view it again.
    If you lose it, you can always regenerate it.
 
 If you're familiar with SSH keys, you can follow [these instructions][ssh-instructions] to use that alternative authentication method.
@@ -213,7 +213,7 @@ See [GitHub Help: Adding a license to a repository][adding-licence]
 - Are guidelines explaining how people should contribute to your project.
 - Could include steps for creating good issues or pull requests.
 - Often, also have links to external documentation, mailing lists, or a code of
- conduct and community and behavioral expectations.
+ conduct and community and behavioural expectations.
 
 See [GitHub Help: Setting guidelines for repository contributors][contributors].
 

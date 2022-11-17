@@ -142,7 +142,7 @@ The path you see in the output will vary depending on your operating system.
 > like GitHub, use now `main` as the default name instead. You can read the rationale
 > in [this link](https://www.theserverside.com/feature/Why-GitHub-renamed-its-master-branch-to-main).
 >
-> If you are using `git` verison 2.28 or higher (you can find the version you are
+> If you are using `git` version 2.28 or higher (you can find the version you are
 > using with `git --version`) you can change the default branch name for all new
 > repositories with:
 >
@@ -393,7 +393,7 @@ but in the alphanumeric sequence (hash) at the start of each commit.
 > the word `commit`. For example, `ae3255af37e82a98c57f16a057acd1ad5a15ff28` for the
 > last entry.
 >
-> Ocasionally, you will need to refer to a specific commit using the hash. Normally, you
+> Occasionally, you will need to refer to a specific commit using the hash. Normally, you
 > can use just the first 5 or 6 elements of the hash (eg. for the hash above it will be
 > enough to use `ae3255a`) as it is very unlikely that there will be two commit hashes
 > with identical starting elements.
