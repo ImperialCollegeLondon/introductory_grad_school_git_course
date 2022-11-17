@@ -72,6 +72,7 @@ If you're familiar with SSH keys, you can follow [these instructions][ssh-instru
 >
 > Check that you can log in to GitHub using your Personal Access Token, or your
 > SSH key if you opted for that method.
+> 
 > If you run into any issues, ask a demonstrator for assistance so that we can 
 > all move forward together.
 >
