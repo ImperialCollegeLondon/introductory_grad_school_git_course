@@ -68,6 +68,15 @@ Create a Personal Access Token (PAT):
 
 If you're familiar with SSH keys, you can follow [these instructions][ssh-instructions] to use that alternative authentication method.
 
+> ## Exercise: Log in to GitHub
+>
+> Check that you can log in to GitHub using your Personal Access Token, or your
+> SSH key if you opted for that method.
+> If you run into any issues, ask a demonstrator for assistance so that we can 
+> all move forward together.
+>
+{: .challenge}
+
 [pat-instructions]: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-token
 [ssh-instructions]: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
 
