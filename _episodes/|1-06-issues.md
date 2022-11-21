@@ -82,7 +82,7 @@ A particularly useful way of organising issues is by tracking them as part of a 
 > Open one of the issues you created earlier. Let's say you have addressed the content of the issue and are satisfied that it can now be considered dealt with. Find and click the `Close issue` button at the bottom of the issue. Now return to your task list issue and see if you can spot what is different.
 >> ## Solution
 >> In your task list issue you should find that one of the referenced issues now has a tick next to it, indicating that it is closed.
->> ![Task list with a closed issue](../fig/issues4.png "Task list with a closed issue")
+>> ![Task list with a closed issue]({{ site.baseurl }}/fig/issues4.png "Task list with a closed issue")
 > {: .solution}
 {: .challenge}
 
