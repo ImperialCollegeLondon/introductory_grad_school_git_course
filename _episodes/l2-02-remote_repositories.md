@@ -108,7 +108,7 @@ local one out of it or the other way around, the steps are different.
 >   `origin/main` branch.
 > - You can find some information on the repository using the commands already
 >   discussed in Lesson 1, like `git log`.
-> ![Git collaborative]({{ site.baseurl }}/fig/clone.png "Effect of cloning a remote repository."){:class="img-responsive"}
+> ![Effect of cloning a remote repository]({{ site.baseurl }}/fig/clone.png "Effect of cloning a remote repository"){:class="img-responsive"}
 {: .challenge}
 
 
@@ -117,8 +117,7 @@ local one out of it or the other way around, the steps are different.
 - Its basic use is to synchronize **any committed changes** in your current
  branch to its upstream branch: `$ git push`.
 - Changes in the staging area will not be synchronized.
-![Git collaborative]({{ site.baseurl }}/fig/push.png "Push a branch
-."){:class="img-responsive"}
+![Effect of pushing a branch]({{ site.baseurl }}/fig/push.png "Effect of pushing a branch"){:class="img-responsive"}
 - If the upstream branch has changes you do not have in the local branch, the
  command will fail, requesting you to `pull` those changes first (see below).
 
@@ -152,8 +151,7 @@ local one out of it or the other way around, the steps are different.
 - It's best to make sure your repository is in a clean state with no staged or
   unstaged changes - so, all changes committed.
 
-![Git collaborative]({{ site.baseurl }}/fig/pull.png "Pull remote changes")
-{:class="img-responsive"}
+![Effect of pulling remote changes]({{ site.baseurl }}/fig/pull.png "Effect of pulling remote changes"){:class="img-responsive"}
 
 > ## Conflicts
 >
