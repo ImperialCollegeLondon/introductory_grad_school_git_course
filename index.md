@@ -44,17 +44,17 @@ Material will be delivered as a lecture with task following the Carpentries teac
 style.
 
 - The instructor will walk you through the theoretical material of the course,
-  executing themselves the relevant code or instructions. **You are highly encouraged to
+  demonstrating the execution of the relevant code and instructions. **You are highly encouraged to
   code along** and execute the instructions at the same time.
-- Throughout the lessons, there are **yellow boxes** highlighting particularly difficult
-  or important ideas.
+- Throughout the lessons, there are **yellow boxes** highlighting particularly challenging
+  or important concepts.
 - There are also exercises in **orange boxes**. The instructor will give you time to try
-  to do them yourselves before going through the solution. This is often available in a
+  to do them yourself before going through the solution. This is often available in a
   folded part of the orange box, so you can check it at any time.
 - When doing exercises, put a green sticker in your computer whenever you are done, or a
-  pick/orange one if you need support. A helper will go to you.
-- For online sessions, rise your hand if you are done with the exercise and write
-  directly your question or problem in the chat, so a helper can try to solve it.
+  pink/orange one if you need support. A helper will go to you.
+- For online sessions, raise your hand if you are done with the exercise and write
+ any questions or problems directly into the chat, so a helper can try to solve it.
 
 > ## Prerequisites
 >
