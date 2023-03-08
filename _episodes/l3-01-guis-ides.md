@@ -54,9 +54,7 @@ Or: Surely all the cool kids just use Git from the command line?
 While programs can convey a lot of information via a simple command-line interface,
 there are limits to what can be conveyed easily. Notably, in the case of Git, your
 repository's history is really a graph (specifically, a directed acyclic graph) and a
-text interface isn't a particularly good way of showing a graph, as some of you may have
-found when trying to understand the output of your `git graph` alias in the previous
-section.
+text interface isn't a particularly good way of showing a graph.
 
 So far, your `recipe` repository is fairly simple, but it is worth noting that
 repositories can become complex, e.g.:
