@@ -86,7 +86,7 @@ to perform the above commands once for each new computer Git is installed on.
 
 ## Creating a Repository
 
-> ## Warning for Linux and MacOS users
+> ## Warning for Linux and macOS users
 >
 > Before you move onto this exercise, you should run the following command:
 >
