@@ -8,7 +8,7 @@ questions:
 objectives:
 - Explain what version control software does
 - Describe the advantages of using version control
-- State that Git is an example of version control softwares
+- State that Git is an example of version control software
 keypoints:
 - Version control software refers to a type of program that records sets of changes made to files
 - VCS is a ubiquitous tool for software development

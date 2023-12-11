@@ -152,7 +152,7 @@ directory of your repository:
 ### Licence
 
 - Important in any repository, essential in a public one.
-- Describes how people are allowed to use (and re-use) the information in your
+- Describes how people are allowed to use (and reuse) the information in your
   repository.
 - Do use a standard licence file to avoid headaches and legal issues later on.
 - If your repository is part of an Organisation, make sure this organisation
