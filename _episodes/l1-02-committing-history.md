@@ -151,8 +151,8 @@ The path you see in the output will vary depending on your operating system.
 > ~~~
 > {: .commands}
 >
-> For existing repositories or if your git version is lower tha 2.28, you can create the
-> `master` branch normally and then re-name it with:
+> For existing repositories or if your git version is lower than 2.28, you can create
+> the `master` branch normally and then re-name it with:
 >
 > ~~~
 > $ git branch -m master main
