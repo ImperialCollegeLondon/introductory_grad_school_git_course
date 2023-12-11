@@ -121,9 +121,10 @@ control the visibility of a repository.
 > possible.
 >
 > Read more:
-> * [Open Science Massively Open Online Course](https://opensciencemooc.eu/about/)
-> * [The Turing Way][turing-way]
-> * [The OpenScience Project](http://openscience.org/about-openscience/)
+>
+> - [Open Science Massively Open Online Course](https://opensciencemooc.eu/about/)
+> - [The Turing Way][turing-way]
+> - [The OpenScience Project](http://openscience.org/about-openscience/)
 {: .callout}
 
 [turing-way]: https://www.turing.ac.uk/research/research-projects/turing-way-handbook-reproducible-data-science#introduction
@@ -247,6 +248,7 @@ See [GitHub Help: Setting guidelines for repository contributors][contributors].
 >   -clause.
 >
 > > ## Solution
+> >
 > > Your repository is now ready and you should see something similar to this:
 > > ![Screenshot of the new repository in GitHub]({{ site.baseurl }}/fig/new_repo.jpg "Screenshot of the new repository in GitHub")
 > > It tells you there is only 1 commit, 1 branch and 1 contributor, the type
@@ -266,6 +268,7 @@ See [GitHub Help: Setting guidelines for repository contributors][contributors].
 > Have a look at some [Examples of contributing
 > guidelines][contributing-examples] and copy/paste those parts relevant for
 > your project.
+>
 > - Once you are done, click on **Commit new file** and the changes will be
 >   confirmed. Now you should see a CONTRIBUTING.md file in the root directory.
 {: .challenge}

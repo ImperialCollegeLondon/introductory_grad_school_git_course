@@ -42,9 +42,10 @@ information you must provide before it is ready to use. Enter the below commands
 using your relevant personal information as required (don't type the `$`).
 
 ~~~
-$ git config --global user.name "FIRST_NAME LAST_NAME"
-$ git config --global user.email "email@example.com"
+git config --global user.name "FIRST_NAME LAST_NAME"
+git config --global user.email "email@example.com"
 ~~~
+
 {: .commands}
 
 The information provided here will be included with every snapshot you record
@@ -58,26 +59,34 @@ to perform the above commands once for each new computer Git is installed on.
 > For users not generally familiar with using command line interfaces it's worth
 > taking a moment to consider the commands that were just run. To understand
 > what we just did let's break down the first command:
+>
 > 1. `git`
->   * This simply indicates to the command line that we want to something with
+>
+> * This simply indicates to the command line that we want to something with
 >     Git.
->   * All commands that we use today will start with this.
-> 2. `config`
->   * Git is a very powerful tool with lots of functionality so next we need to
+> * All commands that we use today will start with this.
+>
+> 1. `config`
+>
+> * Git is a very powerful tool with lots of functionality so next we need to
 >     indicate what we want to do with it.
->   * Putting `config` indicates we want to change something about how Git
+> * Putting `config` indicates we want to change something about how Git
 >     is configured.
-> 3. `--global`
->   * Parts that start with dashes are called flags and are used to fine tune
+>
+> 1. `--global`
+>
+> * Parts that start with dashes are called flags and are used to fine tune
 >     the behaviour of the command given.
->   * The role of the `--global` flag is explained above.
-> 4. `user.name "FIRST_NAME LAST_NAME"`
->   * Finally we tell Git what we want to configure and the details to use.
+> * The role of the `--global` flag is explained above.
+>
+> 1. `user.name "FIRST_NAME LAST_NAME"`
+>
+> * Finally we tell Git what we want to configure and the details to use.
 {: .callout}
 
 ## Creating a Repository
 
-> ## Warning for Linux and MacOS users!
+> ## Warning for Linux and MacOS users
 >
 > Before you move onto this exercise, you should run the following command:
 >
@@ -103,16 +112,20 @@ directory**. The zip file contains a directory called `recipe` which in turn
 contains 2 files - `instructions.md` and `ingredients.md`. This is the project
 we'll be working with, whilst not based on code this recipe for guacamole is an
 intuitive example to illustrate the functionality of Git. To extract the archive run the below command:
+
 ~~~
-$ unzip recipe.zip
+unzip recipe.zip
 ~~~
+
 {: .commands}
 
 Then change the working directory of the terminal the newly created `recipe`
 directory:
+
 ~~~
-$ cd recipe
+cd recipe
 ~~~
+
 {: .commands}
 
 You'll need to repeat `cd recipe` if you open a new command line interface. Feel
@@ -124,18 +137,23 @@ of Markdown and GitHub will come up in the next session however.
 
 To start using Git with our recipe we need to create a repository for it. Make
 sure the current working directory for your terminal is `recipe` and run:
+
 ~~~
-$ git init
+git init
 ~~~
+
 {: .commands}
+
 ~~~
 Initialized empty Git repository in /home/username/recipe/.git/
 ~~~
+
 {: .output}
 
 The path you see in the output will vary depending on your operating system.
 
 > ## `master` and `main` branches
+>
 > A branch is a specific version of the state and history of the work in the repo.
 > Traditionally, the default branch name whenever you `init` a repository was `master`.
 > However, the awareness of the online community has improved lately and some tools,
@@ -149,6 +167,7 @@ The path you see in the output will vary depending on your operating system.
 > ~~~
 > $ git config --global init.defaultBranch main
 > ~~~
+>
 > {: .commands}
 >
 > For existing repositories or if your git version is lower than 2.28, you can create
@@ -157,6 +176,7 @@ The path you see in the output will vary depending on your operating system.
 > ~~~
 > $ git branch -m master main
 > ~~~
+>
 > {: .commands}
 >
 > Depending on your exact version of git, you might get an error like the following when
@@ -166,6 +186,7 @@ The path you see in the output will vary depending on your operating system.
 > error:: refname refs/heads/master not found
 > fatal: Branch rename failed
 > ~~~
+>
 > {: .output}
 >
 > If that is your case, make sure there are not uncommitted files in the repository, and
@@ -180,10 +201,13 @@ The path you see in the output will vary depending on your operating system.
 ## Creating The First Snapshot
 
 Before we do anything else run the below:
+
 ~~~
-$ git status
+git status
 ~~~
+
 {: .commands}
+
 ~~~
 On branch main
 
@@ -192,11 +216,12 @@ No commits yet
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
 
-	ingredients.md
-	instructions.md
+        ingredients.md
+        instructions.md
 
 nothing added to commit but untracked files present (use "git add" to track)
 ~~~
+
 {: .output}
 This is a very useful command that we will use a lot. It should be your first
 point of call to figure out the current state of a repository and often suggests
@@ -209,10 +234,11 @@ automatically and you need make a conscious decision to add a file. Let's do
 what Git hints at:
 
 ~~~
-$ git add ingredients.md
-$ git add instructions.md
-$ git status
+git add ingredients.md
+git add instructions.md
+git status
 ~~~
+
 {: .commands}
 
 ~~~
@@ -223,9 +249,10 @@ No commits yet
 Changes to be committed:
   (use "git rm --cached <file>..." to unstage)
 
-	new file:   ingredients.md
-	new file:   instructions.md
+        new file:   ingredients.md
+        new file:   instructions.md
 ~~~
+
 {: .output}
 
 Now this change is ***staged*** and ready to be committed (note that we could
@@ -243,6 +270,7 @@ $ git commit -m "adding ingredients and instructions"
  create mode 100644 ingredients.md
  create mode 100644 instructions.md
 ~~~
+
 {: .commands}
 
 We have now finished creating the first snapshot in the repository. Named after
@@ -252,13 +280,16 @@ on. Straight away query the status to get this useful command into our muscle
 memory:
 
 ~~~
-$ git status
+git status
 ~~~
+
 {: .commands}
+
 ~~~
 On branch main
 nothing to commit, working tree clean
 ~~~
+
 {: .output}
 
 The output we get now is very minimal. This highlights an important point about
@@ -267,9 +298,11 @@ the status command - its purpose is to report on changes in the repository
 we can use:
 
 ~~~
-$ git log
+git log
 ~~~
+
 {: .commands}
+
 ~~~
 commit b7cd5f6ff57968a7782ff8e74cc9921cc7463c30 (HEAD -> main)
 Author: Christopher Cave-Ayland <c.cave-ayland@imperial.ac.uk>
@@ -277,6 +310,7 @@ Date:   Mon Dec 30 12:51:04 2019 +0000
 
     adding ingredients and instructions
 ~~~
+
 {: .output}
 
 We'll talk in more detail about the output here but for now the main point is to
@@ -315,9 +349,10 @@ of Git are show below:
 >
 > When you are done editing the files, try:
 >
-> ```shell
+> ~~~shell
 > $ git diff
-> ```
+> ~~~
+>
 > There's lots of information here so take some time to understand the
 > output. If your output doesn't contain colours you may want to run `git diff
 > --color`.
@@ -348,8 +383,9 @@ We used `git log` previously to see the first commit we created. Let's run it
 again now.
 
 ~~~
-$ git log
+git log
 ~~~
+
 {: .commands}
 
 ~~~
@@ -371,6 +407,7 @@ Date:   Tue Dec 31 12:27:14 2019 +0000
 
     Adding ingredients and instructions
 ~~~
+
 {: .output}
 
 Your output will differ from the above not only in the date and author fields
@@ -387,6 +424,7 @@ but in the alphanumeric sequence (hash) at the start of each commit.
   the current working directory is based on.
 
 > ## What is a commit hash?
+>
 > A commit hash is a string that uniquely identifies a specific commit. They are
 > the really long list of numbers and letters that you can see in the output above after
 > the word `commit`. For example, `ae3255af37e82a98c57f16a057acd1ad5a15ff28` for the
@@ -402,28 +440,31 @@ but in the alphanumeric sequence (hash) at the start of each commit.
 > brackets!) with the hash id. For example, if you need to use `git show` (see example
 > below) with the above commit hash, you will run:
 >
-> ```shell
+> ~~~shell
 > $ git show ae3255a
-> ```
+> ~~~
+>
 {: .callout}
 
 > ## Exercise: Recalling the changes for a commit
 >
 > The command `git log` shows us the metadata for a commit but to see the
 > file changes recorded in a commit you can use `git show`:
-> ```shell
+>
+> ~~~shell
 > $ git show [commit-hash]
-> ```
+> ~~~
 >
 > Use one of the commit hashes from your Git history. To see the contents from
 > when the commit was made try:
-> ```shell
+>
+> ~~~shell
 > $ git show [commit-hash]:ingredients.md
-> ```
+> ~~~
+>
 {: .challenge}
 
 ## To Err is Human, To Revert Divine
-
 
 ### Rewriting History
 
@@ -432,16 +473,21 @@ then realising you forgot to stage something, or staged something you shouldn't
 have. Fortunately the Git commit history is not set in stone and can be changed.
 
 To undo the most recent commit you can use:
+
 ~~~
-$ git reset --soft HEAD^
+git reset --soft HEAD^
 ~~~
+
 {: .commands}
 
 Follow this up with:
+
 ~~~
-$ git log
+git log
 ~~~
+
 {: .commands}
+
 ~~~
 commit 2bf7ece2f57594873678f9c17832010730970b28 (HEAD -> main)
 Author: Christopher Cave-Ayland <c.cave-ayland@imperial.ac.uk>
@@ -455,20 +501,25 @@ Date:   Tue Dec 31 12:27:14 2019 +0000
 
     Adding ingredients and instructions
 ~~~
+
 {: .output}
 
 Notice we've gone from three commits to two. Let's also run:
+
 ~~~
-$ git status
+git status
 ~~~
+
 {: .commands}
+
 ~~~
 On branch main
 Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
-	modified:   ingredients.md
+        modified:   ingredients.md
 
 ~~~
+
 {: .output}
 This shows that the content which was part of the commit has been moved back
 into the staging area.
@@ -476,9 +527,11 @@ into the staging area.
 From here we can choose what to do. We could stage some additional changes and
 create a new commit, or we could unstage ingredients.md and do something else
 entirely. For now let's just restore the commit we removed by committing again:
+
 ~~~
-$ git commit -m "Added 1/2 onion to ingredients"
+git commit -m "Added 1/2 onion to ingredients"
 ~~~
+
 {: .commands}
 
 > ## Changing History Can Have Unexpected Consequences
@@ -497,15 +550,19 @@ Sometimes after making a commit we later (sometimes multiple commits later)
 realise that it was misguided and should not have been included. For instance,
 it's a bit of cliche to tell people to "enjoy" at the end of a recipe, so let's
 get rid of it with:
+
 ~~~
-$ git revert --no-edit [commit-hash]
+git revert --no-edit [commit-hash]
 ~~~
+
 {: .commands}
+
 ~~~
 [main a70e1c5] Revert "Added instruction to enjoy"
  Date: Tue Dec 31 12:37:47 2019 +0000
  1 file changed, 1 deletion(-)
 ~~~
+
 {: .output}
 
 Check the contents of `instructions.md` and you should see that the enjoy
@@ -513,9 +570,11 @@ instruction is gone. To fully understand what revert is doing check out the
 repository history:
 
 ~~~
-$ git log
+git log
 ~~~
+
 {: .commands}
+
 ~~~
 commit ddef60e05eae3cc73ea5be3f98df6ae372e43750 (HEAD -> main)
 Author: Christopher Cave-Ayland <c.cave-ayland@imperial.ac.uk>
@@ -527,6 +586,7 @@ Date:   Tue Dec 31 14:55:52 2019 +0000
 
 ...
 ~~~
+
 {: .output}
 
 Using `git revert` has added a new commit which reverses the changes made in the

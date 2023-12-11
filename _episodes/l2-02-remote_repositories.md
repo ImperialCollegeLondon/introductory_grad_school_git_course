@@ -65,6 +65,7 @@ local one out of it or the other way around, the steps are different.
 >$ git remote add origin ADDRESS_OF_YOUR_REMOTE_REPO
 >$ git push -u origin main
 >```
+>
 > For example, for this course's repository, the address would be:
 > `https://github.com/ImperialCollegeLondon/introductory_grad_school_git_course.git`
 > In general, it is something like: `https://github.com/USERNAME/REPO_NAME.git`
@@ -77,15 +78,16 @@ local one out of it or the other way around, the steps are different.
 > earlier and press "Sign in". On subsequent interactions with GitHub your credentials
 > will be remembered and you will not be prompted.
 >
->- The first line above will set the GitHub repository as the remote for your
-> local one, calling it `origin`.
->- The second line will push your main branch to a remote one called
+> - The first line above will set the GitHub repository as the remote for your
+>   local one, calling it `origin`.
+> - The second line will push your main branch to a remote one called
 >  `origin/main`, setting it as its upstream branch.
 > - You can check if things went well by going to GitHub: the repository there
 >   should contain all the files of your local repository.
 {: .challenge}
 
 > ## Configuring a local repository from a remote
+>
 > This involves the git command **clone**. Let's create a local copy of the
 > `example` repository you created remotely in the last episode.
 >
@@ -101,6 +103,7 @@ local one out of it or the other way around, the steps are different.
 > $ git clone ADDRESS_OF_YOUR_REMOTE_REPO
 > $ cd example
 > ```
+>
 > - This will download the remote repository to a new `example` directory, in
 >   full, with all the information on the branches available in `origin`, if any, and
 >   all the git history.
@@ -110,7 +113,6 @@ local one out of it or the other way around, the steps are different.
 >   discussed in Lesson 1, like `git log`.
 > ![Effect of cloning a remote repository]({{ site.baseurl }}/fig/clone.png "Effect of cloning a remote repository"){:class="img-responsive"}
 {: .challenge}
-
 
 ## Pushing
 
@@ -122,6 +124,7 @@ local one out of it or the other way around, the steps are different.
  command will fail, requesting you to `pull` those changes first (see below).
 
 > ## Pushing an updated README
+>
 > You want to update the README file of the `example` repository with more
 > detailed information of what the repository is about and then push
 > the changes to the remote.
@@ -132,11 +135,13 @@ local one out of it or the other way around, the steps are different.
 > that you can view the changes you made.
 >
 > > ## Solution
+> >
 > > ```bash
 > > $ git add README.md
 > > $ git commit -m COMMIT_MESSAGE
 > > $ git push
 > > ```
+> >
 > {: .solution}
 {: .challenge}
 
@@ -162,10 +167,11 @@ local one out of it or the other way around, the steps are different.
 > to be resolved before proceeding.
 >
 > This is part of the scope of the intermediate Git and GitHub course that you can find
-> in https://imperialcollegelondon.github.io/intermediate_grad_school_git_course/
+> in <https://imperialcollegelondon.github.io/intermediate_grad_school_git_course/>
 {: .callout}
 
 > ## Pulling an updated README
+>
 > When reviewing your new README file online, you have discovered a typo and
 > decided to correct it directly in GitHub. Modify the README file online and
 > then synchronise the changes with your local repository (tip: you can edit
@@ -173,15 +179,19 @@ local one out of it or the other way around, the steps are different.
 > in the upper right corner).
 >
 > > ## Solution
+> >
 > > ```bash
 > > $ git fetch
 > > $ git status
 > > ```
+> >
 > > This will indicate that the remote branch is ahead of your local branch
 > by 1 commit. Since there are no diverging commits, it is safe to pull.
+> >
 > > ```bash
 > > $ git pull
 > > ```
+> >
 > {: .solution}
 {: .challenge}
 
