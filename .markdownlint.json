@@ -2,5 +2,6 @@
   "MD013": false,
   "MD024": false,
   "MD028": false,
-  "MD040": false
+  "MD040": false,
+  "MD048": { "style": "backtick" }
 }

@@ -41,10 +41,10 @@ You can use the command line to interact with Git but there is still some extra
 information you must provide before it is ready to use. Enter the below commands
 using your relevant personal information as required (don't type the `$`).
 
-~~~
+```
 git config --global user.name "FIRST_NAME LAST_NAME"
 git config --global user.email "email@example.com"
-~~~
+```
 
 {: .commands}
 
@@ -90,9 +90,9 @@ to perform the above commands once for each new computer Git is installed on.
 >
 > Before you move onto this exercise, you should run the following command:
 >
-> ~~~
+> ```
 > $ git config --global core.autocrlf input
-> ~~~
+> ```
 >
 > This will stop git recording changes to line endings, which can -- depending on which
 > text editor you're using -- result in git erroneously thinking every line in a file
@@ -113,18 +113,18 @@ contains 2 files - `instructions.md` and `ingredients.md`. This is the project
 we'll be working with, whilst not based on code this recipe for guacamole is an
 intuitive example to illustrate the functionality of Git. To extract the archive run the below command:
 
-~~~
+```
 unzip recipe.zip
-~~~
+```
 
 {: .commands}
 
 Then change the working directory of the terminal the newly created `recipe`
 directory:
 
-~~~
+```
 cd recipe
-~~~
+```
 
 {: .commands}
 
@@ -138,15 +138,15 @@ of Markdown and GitHub will come up in the next session however.
 To start using Git with our recipe we need to create a repository for it. Make
 sure the current working directory for your terminal is `recipe` and run:
 
-~~~
+```
 git init
-~~~
+```
 
 {: .commands}
 
-~~~
+```
 Initialized empty Git repository in /home/username/recipe/.git/
-~~~
+```
 
 {: .output}
 
@@ -164,28 +164,28 @@ The path you see in the output will vary depending on your operating system.
 > using with `git --version`) you can change the default branch name for all new
 > repositories with:
 >
-> ~~~
+> ```
 > $ git config --global init.defaultBranch main
-> ~~~
+> ```
 >
 > {: .commands}
 >
 > For existing repositories or if your git version is lower than 2.28, you can create
 > the `master` branch normally and then re-name it with:
 >
-> ~~~
+> ```
 > $ git branch -m master main
-> ~~~
+> ```
 >
 > {: .commands}
 >
 > Depending on your exact version of git, you might get an error like the following when
 > trying to rename the branch:
 >
-> ~~~
+> ```
 > error:: refname refs/heads/master not found
 > fatal: Branch rename failed
-> ~~~
+> ```
 >
 > {: .output}
 >
@@ -202,13 +202,13 @@ The path you see in the output will vary depending on your operating system.
 
 Before we do anything else run the below:
 
-~~~
+```
 git status
-~~~
+```
 
 {: .commands}
 
-~~~
+```
 On branch main
 
 No commits yet
@@ -220,7 +220,7 @@ Untracked files:
         instructions.md
 
 nothing added to commit but untracked files present (use "git add" to track)
-~~~
+```
 
 {: .output}
 This is a very useful command that we will use a lot. It should be your first
@@ -233,15 +233,15 @@ the files** to the list of files tracked by Git. Git does not track any files
 automatically and you need make a conscious decision to add a file. Let's do
 what Git hints at:
 
-~~~
+```
 git add ingredients.md
 git add instructions.md
 git status
-~~~
+```
 
 {: .commands}
 
-~~~
+```
 On branch main
 
 No commits yet
@@ -251,7 +251,7 @@ Changes to be committed:
 
         new file:   ingredients.md
         new file:   instructions.md
-~~~
+```
 
 {: .output}
 
@@ -262,14 +262,14 @@ instructions.md`).
 Let us now commit the change to the repository, with a brief but informative
 description of the change:
 
-~~~
+```
 $ git commit -m "adding ingredients and instructions"
 
 [main (root-commit) aa243ea] adding ingredients and instructions
  2 files changed, 8 insertions(+)
  create mode 100644 ingredients.md
  create mode 100644 instructions.md
-~~~
+```
 
 {: .commands}
 
@@ -279,16 +279,16 @@ the command we just used, a snapshot is usually referred to in Git as a
 on. Straight away query the status to get this useful command into our muscle
 memory:
 
-~~~
+```
 git status
-~~~
+```
 
 {: .commands}
 
-~~~
+```
 On branch main
 nothing to commit, working tree clean
-~~~
+```
 
 {: .output}
 
@@ -297,19 +297,19 @@ the status command - its purpose is to report on changes in the repository
 **relative to the last commit**. In order to see the commits made in a project
 we can use:
 
-~~~
+```
 git log
-~~~
+```
 
 {: .commands}
 
-~~~
+```
 commit b7cd5f6ff57968a7782ff8e74cc9921cc7463c30 (HEAD -> main)
 Author: Christopher Cave-Ayland <c.cave-ayland@imperial.ac.uk>
 Date:   Mon Dec 30 12:51:04 2019 +0000
 
     adding ingredients and instructions
-~~~
+```
 
 {: .output}
 
@@ -349,9 +349,9 @@ of Git are show below:
 >
 > When you are done editing the files, try:
 >
-> ~~~shell
+> ```shell
 > $ git diff
-> ~~~
+> ```
 >
 > There's lots of information here so take some time to understand the
 > output. If your output doesn't contain colours you may want to run `git diff
@@ -382,13 +382,13 @@ of Git are show below:
 We used `git log` previously to see the first commit we created. Let's run it
 again now.
 
-~~~
+```
 git log
-~~~
+```
 
 {: .commands}
 
-~~~
+```
 commit b6ff1ca61f08241ec741f6fc58ab2a443a253d89 (HEAD -> main)
 Author: Christopher Cave-Ayland <c.cave-ayland@imperial.ac.uk>
 Date:   Tue Dec 31 12:32:04 2019 +0000
@@ -406,7 +406,7 @@ Author: Christopher Cave-Ayland <c.cave-ayland@imperial.ac.uk>
 Date:   Tue Dec 31 12:27:14 2019 +0000
 
     Adding ingredients and instructions
-~~~
+```
 
 {: .output}
 
@@ -440,9 +440,9 @@ but in the alphanumeric sequence (hash) at the start of each commit.
 > brackets!) with the hash id. For example, if you need to use `git show` (see example
 > below) with the above commit hash, you will run:
 >
-> ~~~shell
+> ```shell
 > $ git show ae3255a
-> ~~~
+> ```
 >
 {: .callout}
 
@@ -451,16 +451,16 @@ but in the alphanumeric sequence (hash) at the start of each commit.
 > The command `git log` shows us the metadata for a commit but to see the
 > file changes recorded in a commit you can use `git show`:
 >
-> ~~~shell
+> ```shell
 > $ git show [commit-hash]
-> ~~~
+> ```
 >
 > Use one of the commit hashes from your Git history. To see the contents from
 > when the commit was made try:
 >
-> ~~~shell
+> ```shell
 > $ git show [commit-hash]:ingredients.md
-> ~~~
+> ```
 >
 {: .challenge}
 
@@ -474,21 +474,21 @@ have. Fortunately the Git commit history is not set in stone and can be changed.
 
 To undo the most recent commit you can use:
 
-~~~
+```
 git reset --soft HEAD^
-~~~
+```
 
 {: .commands}
 
 Follow this up with:
 
-~~~
+```
 git log
-~~~
+```
 
 {: .commands}
 
-~~~
+```
 commit 2bf7ece2f57594873678f9c17832010730970b28 (HEAD -> main)
 Author: Christopher Cave-Ayland <c.cave-ayland@imperial.ac.uk>
 Date:   Tue Dec 31 12:28:19 2019 +0000
@@ -500,25 +500,25 @@ Author: Christopher Cave-Ayland <c.cave-ayland@imperial.ac.uk>
 Date:   Tue Dec 31 12:27:14 2019 +0000
 
     Adding ingredients and instructions
-~~~
+```
 
 {: .output}
 
 Notice we've gone from three commits to two. Let's also run:
 
-~~~
+```
 git status
-~~~
+```
 
 {: .commands}
 
-~~~
+```
 On branch main
 Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
         modified:   ingredients.md
 
-~~~
+```
 
 {: .output}
 This shows that the content which was part of the commit has been moved back
@@ -528,9 +528,9 @@ From here we can choose what to do. We could stage some additional changes and
 create a new commit, or we could unstage ingredients.md and do something else
 entirely. For now let's just restore the commit we removed by committing again:
 
-~~~
+```
 git commit -m "Added 1/2 onion to ingredients"
-~~~
+```
 
 {: .commands}
 
@@ -551,17 +551,17 @@ realise that it was misguided and should not have been included. For instance,
 it's a bit of cliche to tell people to "enjoy" at the end of a recipe, so let's
 get rid of it with:
 
-~~~
+```
 git revert --no-edit [commit-hash]
-~~~
+```
 
 {: .commands}
 
-~~~
+```
 [main a70e1c5] Revert "Added instruction to enjoy"
  Date: Tue Dec 31 12:37:47 2019 +0000
  1 file changed, 1 deletion(-)
-~~~
+```
 
 {: .output}
 
@@ -569,13 +569,13 @@ Check the contents of `instructions.md` and you should see that the enjoy
 instruction is gone. To fully understand what revert is doing check out the
 repository history:
 
-~~~
+```
 git log
-~~~
+```
 
 {: .commands}
 
-~~~
+```
 commit ddef60e05eae3cc73ea5be3f98df6ae372e43750 (HEAD -> main)
 Author: Christopher Cave-Ayland <c.cave-ayland@imperial.ac.uk>
 Date:   Tue Dec 31 14:55:52 2019 +0000
@@ -585,7 +585,7 @@ Date:   Tue Dec 31 14:55:52 2019 +0000
     This reverts commit 2bf7ece2f57594873678f9c17832010730970b28.
 
 ...
-~~~
+```
 
 {: .output}
 
