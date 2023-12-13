@@ -8,7 +8,7 @@ questions:
 objectives:
 - Explain what version control software does
 - Describe the advantages of using version control
-- State that Git is an example of version control softwares
+- State that Git is an example of version control software
 keypoints:
 - Version control software refers to a type of program that records sets of changes made to files
 - VCS is a ubiquitous tool for software development
@@ -67,53 +67,55 @@ mylib-1.3.3_wk_11.8.08.tgz      somecode_19.7.09.tgz
 mylib-1.3.3_wk_13.8.08.tgz      somecode-20.7.09.tgz
 ...
 ```
+
 The trouble with this way of working:
-* Lots of manual work to manage these files
-* Names are uninformative
-* Not clear which versions of mylib and somecode are compatible
-* Difficult to find changes between versions
+
+- Lots of manual work to manage these files
+- Names are uninformative
+- Not clear which versions of mylib and somecode are compatible
+- Difficult to find changes between versions
 
 ### Mistakes Happen
 
 Without recorded snapshots you cannot:
-* Undo mistakes and go back to a working version of your code
-* Find out when a mistake was made and which results it may affect
-* You might not even be able to tell what your mistake was (*"It was working
+
+- Undo mistakes and go back to a working version of your code
+- Find out when a mistake was made and which results it may affect
+- You might not even be able to tell what your mistake was (*"It was working
   yesterday..."*)
 
 ### Working on different things
 
-* For example new features and bug fixes, but you also want to use the current
+- For example new features and bug fixes, but you also want to use the current
   code for ongoing analysis
-* Usually leads to multiple different copies of the code
-* Copies need to be combined back together - but this often doesn't happen
+- Usually leads to multiple different copies of the code
+- Copies need to be combined back together - but this often doesn't happen
 
 ### Collaboration
 
-* *"I will just finish my work and then you can start with your changes."*
-* *"Can you please send me the latest version?"*
-* *"Where is the latest version?"*
-* *"Which version are you using?"*
-* *"Which version have the authors used in the paper I am trying to reproduce?"*
-
+- *"I will just finish my work and then you can start with your changes."*
+- *"Can you please send me the latest version?"*
+- *"Where is the latest version?"*
+- *"Which version are you using?"*
+- *"Which version have the authors used in the paper I am trying to reproduce?"*
 
 ### Reproducibility
 
-* How do you indicate which version of your code you have used in your paper?
-* When you find a bug, how do you know when precisely this bug was introduced
+- How do you indicate which version of your code you have used in your paper?
+- When you find a bug, how do you know when precisely this bug was introduced
   (are published results affected? do you need to inform collaborators or users
   of your code?).
-
 
 ## What about Dropbox or Google Drive?
 
 Using a system like this solves some but not all of the issues above:
-* Document/code is in one place, no need to email snapshots.
-* How can you use an old version? Possible to get old versions but in a much
+
+- Document/code is in one place, no need to email snapshots.
+- How can you use an old version? Possible to get old versions but in a much
   less useful way - snapshots of files, not directories.
-* What if you want to work on multiple versions at the same time? Do you make a
+- What if you want to work on multiple versions at the same time? Do you make a
   copy? How do you merge copies?
-* What if you don't have internet?
+- What if you don't have internet?
 
 ## Git - A Version Control System
 
@@ -129,6 +131,7 @@ its use are often only apparent in the longer term. Today we will make every
 effort to demystify Git and make clear why it's usage is an essential part of
 any programming activity.
 
+<!-- markdownlint-disable MD033 -->
 <center><blockquote class="twitter-tweet"><p lang="en" dir="ltr">&quot;It&#39;s called a merge commit, Marty! It&#39;s a directed acyclic graph! We need to bisect and revert, and then use interactive rebasing possibly with a cherry-pick. What aren&#39;t you getting about this!?&quot; <a href="https://t.co/zahjHhiB33">pic.twitter.com/zahjHhiB33</a></p>&mdash; Gabriel Lebec (@g_lebec) <a href="https://twitter.com/g_lebec/status/1312115110685540352?ref_src=twsrc%5Etfw">October 2, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></center>
 
 These materials are written in the style of [The Carpentries][carpentries]. If

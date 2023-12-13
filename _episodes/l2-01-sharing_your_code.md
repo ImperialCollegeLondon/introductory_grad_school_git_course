@@ -72,8 +72,8 @@ If you're familiar with SSH keys, you can follow [these instructions][ssh-instru
 >
 > Check that you can log in to GitHub using your Personal Access Token, or your
 > SSH key if you opted for that method.
-> 
-> If you run into any issues, ask a demonstrator for assistance so that we can 
+>
+> If you run into any issues, ask a demonstrator for assistance so that we can
 > all move forward together.
 >
 {: .challenge}
@@ -121,9 +121,10 @@ control the visibility of a repository.
 > possible.
 >
 > Read more:
-> * [Open Science Massively Open Online Course](https://opensciencemooc.eu/about/)
-> * [The Turing Way][turing-way]
-> * [The OpenScience Project](http://openscience.org/about-openscience/)
+>
+> - [Open Science Massively Open Online Course](https://opensciencemooc.eu/about/)
+> - [The Turing Way][turing-way]
+> - [The OpenScience Project](http://openscience.org/about-openscience/)
 {: .callout}
 
 [turing-way]: https://www.turing.ac.uk/research/research-projects/turing-way-handbook-reproducible-data-science#introduction
@@ -151,7 +152,7 @@ directory of your repository:
 ### Licence
 
 - Important in any repository, essential in a public one.
-- Describes how people are allowed to use (and re-use) the information in your
+- Describes how people are allowed to use (and reuse) the information in your
   repository.
 - Do use a standard licence file to avoid headaches and legal issues later on.
 - If your repository is part of an Organisation, make sure this organisation
@@ -247,6 +248,7 @@ See [GitHub Help: Setting guidelines for repository contributors][contributors].
 >   -clause.
 >
 > > ## Solution
+> >
 > > Your repository is now ready and you should see something similar to this:
 > > ![Screenshot of the new repository in GitHub]({{ site.baseurl }}/fig/new_repo.jpg "Screenshot of the new repository in GitHub")
 > > It tells you there is only 1 commit, 1 branch and 1 contributor, the type
@@ -266,6 +268,7 @@ See [GitHub Help: Setting guidelines for repository contributors][contributors].
 > Have a look at some [Examples of contributing
 > guidelines][contributing-examples] and copy/paste those parts relevant for
 > your project.
+>
 > - Once you are done, click on **Commit new file** and the changes will be
 >   confirmed. Now you should see a CONTRIBUTING.md file in the root directory.
 {: .challenge}
