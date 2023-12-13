@@ -45,7 +45,6 @@ using your relevant personal information as required (don't type the `$`).
 git config --global user.name "FIRST_NAME LAST_NAME"
 git config --global user.email "email@example.com"
 ```
-
 {: .commands}
 
 The information provided here will be included with every snapshot you record
@@ -116,7 +115,6 @@ intuitive example to illustrate the functionality of Git. To extract the archive
 ```
 unzip recipe.zip
 ```
-
 {: .commands}
 
 Then change the working directory of the terminal the newly created `recipe`
@@ -125,7 +123,6 @@ directory:
 ```
 cd recipe
 ```
-
 {: .commands}
 
 You'll need to repeat `cd recipe` if you open a new command line interface. Feel
@@ -141,13 +138,11 @@ sure the current working directory for your terminal is `recipe` and run:
 ```
 git init
 ```
-
 {: .commands}
 
 ```
 Initialized empty Git repository in /home/username/recipe/.git/
 ```
-
 {: .output}
 
 The path you see in the output will vary depending on your operating system.
@@ -167,7 +162,6 @@ The path you see in the output will vary depending on your operating system.
 > ```
 > $ git config --global init.defaultBranch main
 > ```
->
 > {: .commands}
 >
 > For existing repositories or if your git version is lower than 2.28, you can create
@@ -176,7 +170,6 @@ The path you see in the output will vary depending on your operating system.
 > ```
 > $ git branch -m master main
 > ```
->
 > {: .commands}
 >
 > Depending on your exact version of git, you might get an error like the following when
@@ -186,7 +179,6 @@ The path you see in the output will vary depending on your operating system.
 > error:: refname refs/heads/master not found
 > fatal: Branch rename failed
 > ```
->
 > {: .output}
 >
 > If that is your case, make sure there are not uncommitted files in the repository, and
@@ -205,7 +197,6 @@ Before we do anything else run the below:
 ```
 git status
 ```
-
 {: .commands}
 
 ```
@@ -221,7 +212,6 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 ```
-
 {: .output}
 This is a very useful command that we will use a lot. It should be your first
 point of call to figure out the current state of a repository and often suggests
@@ -238,7 +228,6 @@ git add ingredients.md
 git add instructions.md
 git status
 ```
-
 {: .commands}
 
 ```
@@ -252,7 +241,6 @@ Changes to be committed:
         new file:   ingredients.md
         new file:   instructions.md
 ```
-
 {: .output}
 
 Now this change is ***staged*** and ready to be committed (note that we could
@@ -270,7 +258,6 @@ $ git commit -m "adding ingredients and instructions"
  create mode 100644 ingredients.md
  create mode 100644 instructions.md
 ```
-
 {: .commands}
 
 We have now finished creating the first snapshot in the repository. Named after
@@ -282,14 +269,12 @@ memory:
 ```
 git status
 ```
-
 {: .commands}
 
 ```
 On branch main
 nothing to commit, working tree clean
 ```
-
 {: .output}
 
 The output we get now is very minimal. This highlights an important point about
@@ -300,7 +285,6 @@ we can use:
 ```
 git log
 ```
-
 {: .commands}
 
 ```
@@ -310,7 +294,6 @@ Date:   Mon Dec 30 12:51:04 2019 +0000
 
     adding ingredients and instructions
 ```
-
 {: .output}
 
 We'll talk in more detail about the output here but for now the main point is to
@@ -385,7 +368,6 @@ again now.
 ```
 git log
 ```
-
 {: .commands}
 
 ```
@@ -407,7 +389,6 @@ Date:   Tue Dec 31 12:27:14 2019 +0000
 
     Adding ingredients and instructions
 ```
-
 {: .output}
 
 Your output will differ from the above not only in the date and author fields
@@ -477,7 +458,6 @@ To undo the most recent commit you can use:
 ```
 git reset --soft HEAD^
 ```
-
 {: .commands}
 
 Follow this up with:
@@ -485,7 +465,6 @@ Follow this up with:
 ```
 git log
 ```
-
 {: .commands}
 
 ```
@@ -501,7 +480,6 @@ Date:   Tue Dec 31 12:27:14 2019 +0000
 
     Adding ingredients and instructions
 ```
-
 {: .output}
 
 Notice we've gone from three commits to two. Let's also run:
@@ -509,7 +487,6 @@ Notice we've gone from three commits to two. Let's also run:
 ```
 git status
 ```
-
 {: .commands}
 
 ```
@@ -519,7 +496,6 @@ Changes to be committed:
         modified:   ingredients.md
 
 ```
-
 {: .output}
 This shows that the content which was part of the commit has been moved back
 into the staging area.
@@ -531,7 +507,6 @@ entirely. For now let's just restore the commit we removed by committing again:
 ```
 git commit -m "Added 1/2 onion to ingredients"
 ```
-
 {: .commands}
 
 > ## Changing History Can Have Unexpected Consequences
@@ -554,7 +529,6 @@ get rid of it with:
 ```
 git revert --no-edit [commit-hash]
 ```
-
 {: .commands}
 
 ```
@@ -562,7 +536,6 @@ git revert --no-edit [commit-hash]
  Date: Tue Dec 31 12:37:47 2019 +0000
  1 file changed, 1 deletion(-)
 ```
-
 {: .output}
 
 Check the contents of `instructions.md` and you should see that the enjoy
@@ -572,7 +545,6 @@ repository history:
 ```
 git log
 ```
-
 {: .commands}
 
 ```
@@ -586,7 +558,6 @@ Date:   Tue Dec 31 14:55:52 2019 +0000
 
 ...
 ```
-
 {: .output}
 
 Using `git revert` has added a new commit which reverses the changes made in the
