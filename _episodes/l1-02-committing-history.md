@@ -110,7 +110,7 @@ you have not already done so, please download it and **place it in your home
 directory**. The zip file contains a directory called `recipe` which in turn
 contains 2 files - `instructions.md` and `ingredients.md`. This is the project
 we'll be working with; whilst not based on code this recipe for guacamole is an
-intuitive example to illustrate the functionality of Git. To extract the archive 
+intuitive example to illustrate the functionality of Git. To extract the archive
 run the following command:
 
 ```
@@ -440,7 +440,7 @@ but in the alphanumeric sequence (hash) at the start of each commit.
 > git show [commit-hash]
 > ```
 >
-> Use one of the commit hashes from your Git history. To see the contents of 
+> Use one of the commit hashes from your Git history. To see the contents of
 > a particular file from when the commit was made, try:
 >
 > ```shell
