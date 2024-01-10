@@ -20,17 +20,16 @@ keypoints:
 
 ## Remote and local repositories
 
-- The repository you just created in the previous episode is a **remote
-  repository**: it is hosted by a third party hosting system, GitHub in this
-  case.
-- The repository you used in Lesson 1 was a **local repository**: it was just a
-  directory on your hard drive using git for version control.
+- The ``example`` repository you just created is a **remote repository**: it is 
+  hosted by a third party hosting system - GitHub in this case.
+- The ``recipe`` repository you created earlier was a **local repository**: it 
+  was just a directory on your hard drive using git for version control.
 - Local and remote repositories can be synchronized, so changes are accessible
   by other contributors.
 - **This synchronisation is not automatic**: it has to be done explicitly for
   each branch you want to keep up to date (see **pull** and **push** below ).
 - The default name for a remote repository synchronised with a local one is
-  `origin`.
+  ``origin``.
 
 ### Tracking and upstream
 
@@ -48,13 +47,12 @@ local one out of it or the other way around, the steps are different.
 > ## Configuring a remote repository from a local one
 >
 > In this case, you have a local repository and you want to synchronise it with
-> a new, remote one. Let's create a remote for the `recipe` repository you
-> worked on in Lesson 1. If you have lost your copy of the `recipe` repository
-> you can download a completed copy [here](../code/recipe_with_history.zip):
+> a new, remote one. Let's create a remote for the ``recipe`` repository you
+> worked on earlier.
 >
 > - Create a new repository in GitHub, as in the last episode. Give it a name,
->   description and choose if it should be public or private, but do not add any
->   other file (no README or licence).
+>   description and choose if it should be public or private, but **do not add any
+>   other file** (no README or licence).
 > - You will be offered a few options to populate the remote repository. We are
 >   interested in the third one. You will need to make sure HTTPS is selected
 >   (not SSH) for your personal access token to work.
@@ -70,9 +68,9 @@ local one out of it or the other way around, the steps are different.
 > `https://github.com/ImperialCollegeLondon/introductory_grad_school_git_course.git`
 > In general, it is something like: `https://github.com/USERNAME/REPO_NAME.git`
 >
-> **Mac and Linux users:** You will be asked to provide your GitHub username and password.
+> **macOS and Linux users:** You will be asked to provide your GitHub username and password.
 > Enter your personal access token (PAT) as your password.
-> **Windows users:** You will be presented with a `CredentialHelperSelector` dialog box.
+> **Windows users:** You will be presented with a ``CredentialHelperSelector`` dialog box.
 > Ensure "manager-core" is selected and check the box for "Always use this from now
 > on". Press Select. From the next dialog select "Token" then paste the PAT you saved
 > earlier and press "Sign in". On subsequent interactions with GitHub your credentials
@@ -110,7 +108,7 @@ local one out of it or the other way around, the steps are different.
 > - By default, a local `main` branch will be created tracking the
 >   `origin/main` branch.
 > - You can find some information on the repository using the commands already
->   discussed in Lesson 1, like `git log`.
+>   discussed, like `git log`.
 > ![Effect of cloning a remote repository]({{ site.baseurl }}/fig/clone.png "Effect of cloning a remote repository"){:class="img-responsive"}
 {: .challenge}
 
