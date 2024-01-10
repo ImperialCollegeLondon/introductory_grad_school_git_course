@@ -27,8 +27,9 @@ This course (particularly the first half) is closely based on this [Code Refiner
 - An introduction to Git concepts and terminology.
 - Using Git to track and visualise changes in your code.
 - How to prepare your code for publication.
-- Publishing your code using Github.
+- Publishing your code using GitHub.
 - Using GitHub Issues to manage your ToDo list in relation to the software.
+- Using graphical user interfaces (GUIs) to Git
 
 ## Learning outcomes
 
@@ -36,7 +37,9 @@ After completing this workshop, you will be better able to
 1.	Use the version control software Git to record and track changes to a code base
 2.	Publish your code to a public repository
 3.	Maintain your code repository up to date and in sync with your local copy
-4.	Understand how and where to access support from the Research Computing Service at Imperial College
+4.	Manage project action items with GitHub Issues
+5.	Use a graphical user interface to Git
+6.	Understand how and where to access support from the Research Computing Service at Imperial College
 
 ## Delivery of the course
 
