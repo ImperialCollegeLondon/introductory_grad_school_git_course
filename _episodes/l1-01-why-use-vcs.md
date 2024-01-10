@@ -17,7 +17,7 @@ keypoints:
 - VCS provides a viable mechanism for 100's of people to work on the same set of files
 - VCS lets you undo mistakes and restore a code base to a previous working state
 - Git is the most widely used version control software
-- Using Git allows access to online tools for publication and collaboration
+- Using Git facilitates access to online tools for publication and collaboration
 ---
 
 ## The Essence of Version Control
@@ -72,7 +72,7 @@ The trouble with this way of working:
 
 - Lots of manual work to manage these files
 - Names are uninformative
-- Not clear which versions of mylib and somecode are compatible
+- Not clear which versions of ``mylib`` and ``somecode`` are compatible
 - Difficult to find changes between versions
 
 ### Mistakes Happen
@@ -102,9 +102,9 @@ Without recorded snapshots you cannot:
 ### Reproducibility
 
 - How do you indicate which version of your code you have used in your paper?
-- When you find a bug, how do you know when precisely this bug was introduced
-  (are published results affected? do you need to inform collaborators or users
-  of your code?).
+- When you find a bug, how do you know when precisely this bug was introduced?
+  (Are published results affected? do you need to inform collaborators or users
+  of your code?)
 
 ## What about Dropbox or Google Drive?
 
@@ -128,7 +128,7 @@ important fundamental concepts.
 Git is a very powerful tool. Unfortunately it is also quite difficult to start
 using. Git often uses confusing and unintuitive terminology and the benefits of
 its use are often only apparent in the longer term. Today we will make every
-effort to demystify Git and make clear why it's usage is an essential part of
+effort to demystify Git and make clear why its usage is an essential part of
 any programming activity.
 
 <center><blockquote class="twitter-tweet"><p lang="en" dir="ltr">&quot;It&#39;s called a merge commit, Marty! It&#39;s a directed acyclic graph! We need to bisect and revert, and then use interactive rebasing possibly with a cherry-pick. What aren&#39;t you getting about this!?&quot; <a href="https://t.co/zahjHhiB33">pic.twitter.com/zahjHhiB33</a></p>&mdash; Gabriel Lebec (@g_lebec) <a href="https://twitter.com/g_lebec/status/1312115110685540352?ref_src=twsrc%5Etfw">October 2, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></center>
