@@ -13,6 +13,6 @@ weekly [RCS clinic][clinic].
 
 {% include links.md %}
 
-[RSE]: https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/research-software-engineering/
+[RSE]: https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/service-offering/research-software-engineering/
 [community]: https://www.imperial.ac.uk/computational-methods/rse/
-[clinic]: http://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/support/attend-a-clinic/
+[clinic]: https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/service-offering/research-software-engineering/code-surgeries/
