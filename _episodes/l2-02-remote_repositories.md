@@ -61,7 +61,7 @@ local one out of it or the other way around, the steps are different.
 >
 > ```bash
 > git remote add origin ADDRESS_OF_YOUR_REMOTE_REPO
-> git push -u origin main
+> git push --set-upstream origin main
 > ```
 >
 > For example, for this course's repository, the address would be:
