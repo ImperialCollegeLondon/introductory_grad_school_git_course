@@ -20,9 +20,9 @@ keypoints:
 
 ## Remote and local repositories
 
-- The ``example`` repository you just created is a **remote repository**: it is 
+- The ``example`` repository you just created is a **remote repository**: it is
   hosted by a third party hosting system - GitHub in this case.
-- The ``recipe`` repository you created earlier was a **local repository**: it 
+- The ``recipe`` repository you created earlier was a **local repository**: it
   was just a directory on your hard drive using git for version control.
 - Local and remote repositories can be synchronized, so changes are accessible
   by other contributors.
