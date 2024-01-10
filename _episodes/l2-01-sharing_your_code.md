@@ -131,7 +131,7 @@ control the visibility of a repository.
 
 ## Things to include in your project
 
-There are a few files that you should always include in the root directory of 
+There are a few files that you should always include in the root directory of
 your repository:
 
 ### README.md
