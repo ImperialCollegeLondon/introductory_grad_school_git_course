@@ -13,7 +13,7 @@ both using the command line and graphical tools.
 Beyond working on your own code, understanding Git allows usage of online code
 repositories such as GitHub. Using an online repository to publish your code is a great
 way to disseminate your research and a necessary step to collaborate with others. This
-course will demonstrate how to publish code to GitHub and introduce some of its basics
+course will demonstrate how to publish code to GitHub and introduce some of its basic
 features and functionality, while the [Intermediate course][intermediate-course]
 introduces more features that make it a productive collaborative environment.
 
@@ -40,8 +40,8 @@ After completing this workshop, you will be better able to
 
 ## Delivery of the course
 
-Material will be delivered as a lecture with task following the Carpentries teaching
-style.
+Material will be delivered as a lecture with tasks for you to complete, following the Carpentries 
+teaching style.
 
 - The instructor will walk you through the theoretical material of the course,
   demonstrating the execution of the relevant code and instructions. **You are highly encouraged to
