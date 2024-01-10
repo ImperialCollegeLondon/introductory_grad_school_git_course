@@ -98,6 +98,7 @@ local one out of it or the other way around, the steps are different.
 > - Open a new command line interface and execute the commands:
 >
 > ```bash
+> cd $HOME
 > git clone ADDRESS_OF_YOUR_REMOTE_REPO
 > cd example
 > ```
