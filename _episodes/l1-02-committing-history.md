@@ -31,15 +31,15 @@ keypoints:
 ## First Things First
 
 You should have already completed the [setup instructions](../setup) for this
-workshop and have Git installed. Launch a command line environment (in Windows
-launch "Git Bash" from the Start Menu, on Linux or Mac start a new Terminal). We
+workshop and have Git installed. Launch a command line environment (on Windows
+launch "Git Bash" from the Start menu; on Linux or macOS start a new Terminal). We
 will use this command line interface throughout these materials. We focus on
 teaching Git with the command line as we believe this is the most thorough and
 portable way to communicate the underlying concepts.
 
 You can use the command line to interact with Git but there is still some extra
-information you must provide before it is ready to use. Enter the below commands
-using your relevant personal information as required (don't type the `$`).
+information you must provide before it is ready to use. Enter the following commands,
+using your relevant personal information as required.
 
 ```
 git config --global user.name "FIRST_NAME LAST_NAME"
@@ -61,26 +61,26 @@ to perform the above commands once for each new computer Git is installed on.
 >
 > 1. `git`
 >
-> * This simply indicates to the command line that we want to something with
->     Git.
-> * All commands that we use today will start with this.
+>    * This simply indicates to the command line that we want to something with
+>      Git.
+>    * All commands that we use today will start with this.
 >
 > 1. `config`
 >
-> * Git is a very powerful tool with lots of functionality so next we need to
->     indicate what we want to do with it.
-> * Putting `config` indicates we want to change something about how Git
->     is configured.
+>    * Git is a very powerful tool with lots of functionality so next we need to
+>      indicate what we want to do with it.
+>    * Putting `config` indicates we want to change something about how Git
+>      is configured.
 >
 > 1. `--global`
 >
-> * Parts that start with dashes are called flags and are used to fine tune
->     the behaviour of the command given.
-> * The role of the `--global` flag is explained above.
+>    * Parts that start with dashes are called flags and are used to fine tune
+>      the behaviour of the command given.
+>    * The role of the `--global` flag is explained above.
 >
 > 1. `user.name "FIRST_NAME LAST_NAME"`
 >
-> * Finally we tell Git what we want to configure and the details to use.
+>    * Finally we tell Git what we want to configure and the details to use.
 {: .callout}
 
 ## Creating a Repository
@@ -103,14 +103,15 @@ to perform the above commands once for each new computer Git is installed on.
 
 Now that Git is ready to use let's see how to start using it with a new
 project. In Git terminology a project is called a repository (frequently
-shortened to repo).
+shortened to "repo").
 
 For this workshop you were provided with a [zip file](../code/recipe.zip). If
-you have not already, please download it and **place it in your home
+you have not already done so, please download it and **place it in your home
 directory**. The zip file contains a directory called `recipe` which in turn
 contains 2 files - `instructions.md` and `ingredients.md`. This is the project
-we'll be working with, whilst not based on code this recipe for guacamole is an
-intuitive example to illustrate the functionality of Git. To extract the archive run the below command:
+we'll be working with; whilst not based on code this recipe for guacamole is an
+intuitive example to illustrate the functionality of Git. To extract the archive 
+run the following command:
 
 ```
 unzip recipe.zip
@@ -192,7 +193,7 @@ The path you see in the output will vary depending on your operating system.
 
 ## Creating The First Snapshot
 
-Before we do anything else run the below:
+Before we do anything else run the following:
 
 ```
 git status
@@ -214,7 +215,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 ```
 {: .output}
 This is a very useful command that we will use a lot. It should be your first
-point of call to figure out the current state of a repository and often suggests
+port of call to figure out the current state of a repository and often suggests
 commands that can be used for different tasks.
 
 Don't worry about all the output for now, the important bit is that the 2 files
@@ -251,18 +252,21 @@ Let us now commit the change to the repository, with a brief but informative
 description of the change:
 
 ```
-$ git commit -m "adding ingredients and instructions"
+git commit -m "adding ingredients and instructions"
+```
+{: .commands}
 
+```
 [main (root-commit) aa243ea] adding ingredients and instructions
  2 files changed, 8 insertions(+)
  create mode 100644 ingredients.md
  create mode 100644 instructions.md
 ```
-{: .commands}
+{: .output}
 
 We have now finished creating the first snapshot in the repository. Named after
 the command we just used, a snapshot is usually referred to in Git as a
-**commit**, or sometimes a **changeset**. We will use the term commit from now
+**commit**, or sometimes a **changeset**. We will use the term "commit" from now
 on. Straight away query the status to get this useful command into our muscle
 memory:
 
@@ -333,10 +337,10 @@ of Git are show below:
 > When you are done editing the files, try:
 >
 > ```shell
-> $ git diff
+> git diff
 > ```
 >
-> There's lots of information here so take some time to understand the
+> There's a lot of information here so take some time to understand the
 > output. If your output doesn't contain colours you may want to run `git diff
 > --color`.
 >
@@ -422,7 +426,7 @@ but in the alphanumeric sequence (hash) at the start of each commit.
 > below) with the above commit hash, you will run:
 >
 > ```shell
-> $ git show ae3255a
+> git show ae3255a
 > ```
 >
 {: .callout}
@@ -433,14 +437,14 @@ but in the alphanumeric sequence (hash) at the start of each commit.
 > file changes recorded in a commit you can use `git show`:
 >
 > ```shell
-> $ git show [commit-hash]
+> git show [commit-hash]
 > ```
 >
-> Use one of the commit hashes from your Git history. To see the contents from
-> when the commit was made try:
+> Use one of the commit hashes from your Git history. To see the contents of 
+> a particular file from when the commit was made, try:
 >
 > ```shell
-> $ git show [commit-hash]:ingredients.md
+> git show [commit-hash]:ingredients.md
 > ```
 >
 {: .challenge}
@@ -523,7 +527,7 @@ git commit -m "Added 1/2 onion to ingredients"
 
 Sometimes after making a commit we later (sometimes multiple commits later)
 realise that it was misguided and should not have been included. For instance,
-it's a bit of cliche to tell people to "enjoy" at the end of a recipe, so let's
+it's a bit of cliché to tell people to "enjoy" at the end of a recipe, so let's
 get rid of it with:
 
 ```
