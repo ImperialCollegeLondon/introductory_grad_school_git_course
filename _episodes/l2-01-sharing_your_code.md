@@ -9,16 +9,16 @@ objectives:
 - "Differentiate the use case for public and private repositories."
 - "Describe the key information that should be present in a software repository."
 - "Configure git with your GitHub credentials."
-- "Setup a repository in GitHub."
+- "Set up a repository in GitHub."
 keypoints:
 - "Public repositories are open to anyone to use and contribute."
 - "Private repositories are just for yourself or a reduced set of contributors."
 - "README contains a description of the software and, often, some simplified installation instructions."
 - "The LICENSE describes how the software must be distributed and used."
 - "Using one of the OSI (open source initiative) licenses is recommended if the repository is public."
-- "CONTRIBUTING describes how other users can help developing the software."
+- "CONTRIBUTING describes how other users can help develop the software."
 - "CITATION helps others to cite your software in their own papers."
-- "GitHub can be used to setup a software repository, share your code and manage who and how can access it."
+- "GitHub can be used to set up a software repository, share your code and manage who can access it, and how."
 ---
 
 ## Collaborating: what you need to know?
@@ -41,7 +41,7 @@ There are several widely used repository hosting services using Git, such as
 [Bitbucket](https://bitbucket.org/product). In this course we will use
 [GitHub](https://github.com) because:
 
-- It is very easy to use and setup.
+- It is very easy to use and set up.
 - It is, arguably, the most used hosting service of them all.
 - Imperial has a GitHub Organisation any Imperial staff or student can join. You don't
   need to join for this course but instructions to do so can be found [here][ic-github].
@@ -63,7 +63,7 @@ Create a Personal Access Token (PAT):
 
 1. In order to access GitHub from the command line, you will need a PAT.
 2. Follow the instructions [here][pat-instructions] to generate one. Ensure that "repo" is ticked.
-3. Keep the PAT safe, once you navigate away from the page you won't be able to view it again.
+3. Keep the PAT safe - once you navigate away from the page you won't be able to view it again.
    If you lose it, you can always regenerate it.
 
 If you're familiar with SSH keys, you can follow [these instructions][ssh-instructions] to use that alternative authentication method.
@@ -83,10 +83,10 @@ If you're familiar with SSH keys, you can follow [these instructions][ssh-instru
 
 ### Private vs public repositories
 
-Depending of who you want to give access to your repository, there are two
+Depending on who you want to give access to your repository, there are two
 broad types of repositories: **private** and **public**. This choice, the first
 one you will need to make, is not written in stone and you can set a repo
-private initially and making it public later on.
+private initially and make it public later on.
 
 When you are part of an organization account, there are more options to
 control the visibility of a repository.
@@ -107,7 +107,7 @@ control the visibility of a repository.
 
 - Anyone can see the repository, clone it and fork it (how it is then used
  depends on the license; see below).
-- You keep control on who will be able to contribute to the repository.
+- You keep control of who will be able to contribute to the repository.
 - The choice for open source projects and to share your work to a wider
   potential user base.
 
@@ -131,8 +131,8 @@ control the visibility of a repository.
 
 ## Things to include in your project
 
-There are a few files that should get used to always include in the root
-directory of your repository:
+There are a few files that you should always include in the root directory of 
+your repository:
 
 ### README.md
 
@@ -170,7 +170,7 @@ See [GitHub Help: Adding a license to a repository][adding-licence]
 > Imperial College's preferred licence is the permissive BSD 2- or 3-clause. You
 > can check the details at [Imperial website: Open Source Software
 > Licences][licence-guidance]. The guidance on this site is primarily intended
-> for members of staff however it is correct for graduate students with the
+> for members of staff, however, it is correct for graduate students with the
 > exception that ([subject to certain conditions][ip-guidance]) you are entitled
 > to hold the copyright. This site also tells you who you should contact in case
 > you want a different licence model for your work e.g. commercial.
@@ -233,7 +233,7 @@ See [GitHub Help: Setting guidelines for repository contributors][contributors].
 > ## Creating a repository
 >
 > Now you have all the information you need to create a new repository in
-> GitHub. Just follow this steps:
+> GitHub. Just follow these steps:
 >
 > - Once logged in to GitHub, press the `+` symbol in the top right, and choose
 >   `new repository` from the dropdown menu.
