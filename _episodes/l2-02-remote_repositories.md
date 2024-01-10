@@ -12,7 +12,7 @@ objectives:
 - "Use the push command to send changes on the local branch to the remote one."
 - "Use the pull command to update your local branch with the remote one."
 keypoints:
-- "origin is typically the name of the remote repository used by git."
+- "origin is typically the name of the remote repository used by GitHub."
 - "Local and remote repositories are not identical, in general."
 - "Local and remote repositories are not synchronized automatically."
 - "push and pull commands only affect the branch currently checked out."
@@ -119,7 +119,7 @@ local one out of it or the other way around, the steps are different.
  branch to its upstream branch: `git push`.
 - Changes in the staging area will not be synchronized.
 ![Effect of pushing a branch]({{ site.baseurl }}/fig/push.png "Effect of pushing a branch"){:class="img-responsive"}
-- If the upstream branch has changes you do not have in the local branch, the
+- If the upstream branch has changes that you do not have in the local branch, the
  command will fail, requesting you to `pull` those changes first (see below).
 
 > ## Pushing an updated README
