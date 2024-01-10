@@ -57,12 +57,12 @@ local one out of it or the other way around, the steps are different.
 >   interested in the third one. You will need to make sure HTTPS is selected
 >   (not SSH) for your personal access token to work.
 > - Launch a new command line interface and run `cd recipe` to navigate to the
->   directory where you have your local repository - Then execute:
+>   directory where you have your local repository - then execute:
 >
->```bash
->$ git remote add origin ADDRESS_OF_YOUR_REMOTE_REPO
->$ git push -u origin main
->```
+> ```bash
+> git remote add origin ADDRESS_OF_YOUR_REMOTE_REPO
+> git push -u origin main
+> ```
 >
 > For example, for this course's repository, the address would be:
 > `https://github.com/ImperialCollegeLondon/introductory_grad_school_git_course.git`
@@ -98,8 +98,8 @@ local one out of it or the other way around, the steps are different.
 > - Open a new command line interface and execute the commands:
 >
 > ```bash
-> $ git clone ADDRESS_OF_YOUR_REMOTE_REPO
-> $ cd example
+> git clone ADDRESS_OF_YOUR_REMOTE_REPO
+> cd example
 > ```
 >
 > - This will download the remote repository to a new `example` directory, in
@@ -115,7 +115,7 @@ local one out of it or the other way around, the steps are different.
 ## Pushing
 
 - Its basic use is to synchronize **any committed changes** in your current
- branch to its upstream branch: `$ git push`.
+ branch to its upstream branch: `git push`.
 - Changes in the staging area will not be synchronized.
 ![Effect of pushing a branch]({{ site.baseurl }}/fig/push.png "Effect of pushing a branch"){:class="img-responsive"}
 - If the upstream branch has changes you do not have in the local branch, the
@@ -135,9 +135,9 @@ local one out of it or the other way around, the steps are different.
 > > ## Solution
 > >
 > > ```bash
-> > $ git add README.md
-> > $ git commit -m COMMIT_MESSAGE
-> > $ git push
+> > git add README.md
+> > git commit -m COMMIT_MESSAGE
+> > git push
 > > ```
 > >
 > {: .solution}
@@ -179,15 +179,15 @@ local one out of it or the other way around, the steps are different.
 > > ## Solution
 > >
 > > ```bash
-> > $ git fetch
-> > $ git status
+> > git fetch
+> > git status
 > > ```
 > >
 > > This will indicate that the remote branch is ahead of your local branch
 > by 1 commit. Since there are no diverging commits, it is safe to pull.
 > >
 > > ```bash
-> > $ git pull
+> > git pull
 > > ```
 > >
 > {: .solution}
