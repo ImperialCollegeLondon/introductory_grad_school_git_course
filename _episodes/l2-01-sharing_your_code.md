@@ -78,7 +78,7 @@ If you're familiar with SSH keys, you can follow [these instructions][ssh-instru
 >
 {: .challenge}
 
-[pat-instructions]: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-token
+[pat-instructions]: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic
 [ssh-instructions]: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
 
 ### Private vs public repositories
@@ -176,7 +176,7 @@ See [GitHub Help: Adding a license to a repository][adding-licence]
 > you want a different licence model for your work e.g. commercial.
 {: .callout}
 
-[licence-guidance]: https://www.imperial.ac.uk/enterprise/staff/industry-partnerships-and-commercialisation/commercialisation/intellectual-property-guidance/open-source-software-licences/
+[licence-guidance]: https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/service-offering/research-software-engineering/legal-information/
 [ip-guidance]: https://www.imperial.ac.uk/research-and-innovation/about-imperial-research/research-integrity/ip/
 
 > ## Open Source software licences
