@@ -176,7 +176,7 @@ See [GitHub Help: Adding a license to a repository][adding-licence]
 > you want a different licence model for your work e.g. commercial.
 {: .callout}
 
-[licence-guidance]: https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/service-offering/research-software-engineering/legal-information/
+[licence-guidance]: https://imperiallondon.sharepoint.com/:b:/r/sites/ente/Gov/PoliciesandGuidanceforImperialStaff/Imperial_Enterprise_Open%20Source%20Software%20Licences_Aug23.pdf?csf=1&web=1&e=HlaOgx
 [ip-guidance]: https://www.imperial.ac.uk/research-and-innovation/about-imperial-research/research-integrity/ip/
 
 > ## Open Source software licences
