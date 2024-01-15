@@ -13,7 +13,7 @@ both using the command line and graphical tools.
 Beyond working on your own code, understanding Git allows usage of online code
 repositories such as GitHub. Using an online repository to publish your code is a great
 way to disseminate your research and a necessary step to collaborate with others. This
-course will demonstrate how to publish code to GitHub and introduce some of its basics
+course will demonstrate how to publish code to GitHub and introduce some of its basic
 features and functionality, while the [Intermediate course][intermediate-course]
 introduces more features that make it a productive collaborative environment.
 
@@ -27,8 +27,9 @@ This course (particularly the first half) is closely based on this [Code Refiner
 - An introduction to Git concepts and terminology.
 - Using Git to track and visualise changes in your code.
 - How to prepare your code for publication.
-- Publishing your code using Github.
+- Publishing your code using GitHub.
 - Using GitHub Issues to manage your ToDo list in relation to the software.
+- Using graphical user interfaces (GUIs) to Git
 
 ## Learning outcomes
 
@@ -36,12 +37,14 @@ After completing this workshop, you will be better able to
 1.	Use the version control software Git to record and track changes to a code base
 2.	Publish your code to a public repository
 3.	Maintain your code repository up to date and in sync with your local copy
-4.	Understand how and where to access support from the Research Computing Service at Imperial College
+4.	Manage project action items with GitHub Issues
+5.	Use a graphical user interface to Git
+6.	Understand how and where to access support from the Research Computing Service at Imperial College
 
 ## Delivery of the course
 
-Material will be delivered as a lecture with task following the Carpentries teaching
-style.
+Material will be delivered as a lecture with tasks for you to complete, following the Carpentries
+teaching style.
 
 - The instructor will walk you through the theoretical material of the course,
   demonstrating the execution of the relevant code and instructions. **You are highly encouraged to
