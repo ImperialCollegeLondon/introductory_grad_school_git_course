@@ -7,7 +7,7 @@ questions:
 objectives:
 - "Explain what GitHub issues are and how to create them."
 - "Explain how issues can help you keep track of your work in GitHub"
-- "How to claim issues."
+- "How to claim and assign issues."
 - "Learn how to use GitHub functionality to effectively communicate who is working on what."
 keypoints:
 - "Issues are a feature of GitHub which let you track work in a repository."
@@ -19,10 +19,10 @@ keypoints:
 ## GitHub issues
 
 - GitHub issues are a feature of GitHub. They let you keep track of your work on a GitHub repository and are used to report bugs, request features or enhancements, or to discuss implementation details of some parts of the code.
-- Issues are a kind of TODO list, with pending and completed tasks as well as serving to prioritise the development activity.
+- Issues are a kind of TODO list, with pending and completed tasks, as well as serving to prioritise the development activity.
 - Labels can be added to the issues by the repository administrator to inform at a first glance what the issue is about. Typical labels are “bug”, “enhancement”, “low priority” or “good first issue”, for example.
-- Issues also can have one or more people assigned to them who will take care of sorting them out and closing them when done or if no longer relevant.
-- By default any GitHub user can create an issue in a public repository
+- Issues also can have one or more people assigned to them who will take care of sorting them out and closing them when complete or if no longer relevant.
+- By default, any GitHub user can create an issue in a public repository.
 
 The following figure shows some of the issues open in a certain repository. The labels tell us there are a couple of bug reports, a couple of issues related to the performance of the software and several ones that are simple enough to be tackled by novice people. Most of them have some discussion going on.
 
@@ -30,11 +30,11 @@ The following figure shows some of the issues open in a certain repository. The 
 
 ## Creating GitHub issues
 
-It is possible to create issues in a number of ways (see the GitHub docs page on [creating issues][github-creating-issues] to learn about the various methods). One of the most common and simplest methods is to create an issue from a repository. This can be done by navigating to the main page of the repository on GitHub and click on `Issues`, then click on the `New Issue` button.
+It is possible to create issues in a number of ways (see the GitHub docs page on [creating issues][github-creating-issues] to learn about the various methods). One of the most common and simple methods is to create an issue from a repository. This can be done by navigating to the main page of the repository on GitHub and clicking on `Issues`, then clicking on the `New Issue` button.
 
 > ## Create two new issues
 >
-> Follow the information above to create two new issues in your example repository. It doesn't matter what the issue title or contents are at this stage while we are learning how to create issues, but generally this is an important, and you should always refer to a repository's contributing guidelines for how to construct your issue. For now some simple example titles such as "Fix bug" and "Create Feature" will suffice. Try adding some labels to your issues and assigning yourself.
+> Follow the information above to create two new issues in your example repository. It doesn't matter what the issue title or contents are at this stage while we are learning how to create issues, but generally this is important, and you should always refer to a repository's contributing guidelines for how to construct your issue. For now, some simple example titles such as "Fix bug" and "Create Feature" will suffice. Try adding some labels to your issues and assigning yourself.
 >
 >> ## Solution
 >>
@@ -48,19 +48,19 @@ It is possible to create issues in a number of ways (see the GitHub docs page on
 
 > ## Mentioning other issues
 >
-> All issues receive a tag number starting at 1 and preceded by # like #40 or #110. If you want to refer to an issue in any comment anywhere in GitHub, just use its tag number and these will be automatically linked from the comment.
-> It is slightly different if you want to mention an issue from another repository; Simply paste the URL of that issue and GitHub will usually format this nicely for you. You can always check out the `Preview` tab at the top of the edit box when writing a comment or issue to preview how the formatting will look.
+> All issues receive a tag number starting at 1 and preceded by # e.g. #40 or #110. If you want to refer to an issue in any comment anywhere in GitHub, just use its tag number and these will be automatically linked from the comment.
+> It is slightly different if you want to mention an issue from another repository; simply paste the URL of that issue and GitHub will usually format this nicely for you. You can always check out the "Preview" tab at the top of the edit box when writing a comment or issue to preview how the formatting will look.
 {: .callout}
 
 ## Keeping track of your work with task lists
 
 GitHub provides functionality with issues which allow you to easily organise and keep track of the work going on in a project and to stay up to date with developments.
 
-A particularly useful way of organising issues is by tracking them as part of a larger issue by using task lists. Tasks lists are a set of tasks which are rendered on GitHub as each being on a separate line with a clickable checkbox. Task lists can be added in any comment on GitHub using Markdown, but, if a task list is added to the body of an issue, extra functionality is provided and can be a powerful way to track progress of segments of work in a project. [Read more about using task lists in the GitHub Docs][github-task-lists].
+A particularly useful way of organising issues is to track them as part of a larger issue by using task lists. Tasks lists are a set of tasks which are rendered on GitHub as each being on a separate line with a clickable checkbox. Task lists can be added in any comment on GitHub using Markdown, but, if a task list is added to the body of an issue, extra functionality is provided which can be a powerful way to track progress of segments of work in a project. [Read more about using task lists in the GitHub Docs][github-task-lists].
 
 > ## Create a task list
 >
-> Try creating a new issue which contains a task list. To create a task list in the body of an issue, preface list items with hyphen and space followed by `[ ]`. To mark a task as complete, use `[x]`. Create two items in your task list, one for each of the the issues you created earlier. Try referencing the two previously created issues by using a hash followed by the number of the issue e.g. `#2`. (GitHub may prompt you to select an issue as soon as you type a hash)
+> Try creating a new issue which contains a task list. To create a task list in the body of an issue, preface list items with a hyphen (or an asterisk) and space followed by `[ ]`. To mark a task as complete, use `[x]`. Create two items in your task list, one for each of the the issues you created earlier. Try referencing the two previously created issues by using a hash followed by the number of the issue e.g. `#2`. (GitHub may prompt you to select an issue as soon as you type a hash)
 >
 >> ## Solution
 >>
@@ -92,7 +92,7 @@ A particularly useful way of organising issues is by tracking them as part of a 
 > ## Closing issues
 >
 > Let's see what happens when you close one of the first two issues you created earlier.
-> Open one of the issues you created earlier. Let's say you have addressed the content of the issue and are satisfied that it can now be considered dealt with. Find and click the `Close issue` button at the bottom of the issue. Now return to your task list issue and see if you can spot what is different.
+> Open one of the issues you created earlier. Let's say you have addressed the content of the issue and are satisfied that it can now be considered dealt with. Find and click the "Close issue" button at the bottom of the issue. Now return to your task list issue and see if you can spot what is different.
 >
 >> ## Solution
 >>
