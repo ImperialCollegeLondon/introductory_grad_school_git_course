@@ -25,7 +25,7 @@ Please follow the relevant instructions depending on your operating system.
    1. From the dropdown menu select "Use the nano editor by default" and click on "Next".
    1. Select “Override the default branch name for new repositories” and use the more inclusive terms like “main” (Refer: [The new Git default branch name(https://about.gitlab.com/blog/2021/03/10/new-git-default-branch-name/))
    1. Ensure that "Git from the command line and also from 3rd-party software" is selected and click on "Next". (If you don't do this Git Bash will not work properly, requiring you to remove the Git Bash installation, re-run the installer and to select the "Git from the command line and also from 3rd-party software" option.)
-   1. Ensure that "Use bundled OpenSSH" is selected and click on "Next". 
+   1. Ensure that "Use bundled OpenSSH" is selected and click on "Next".
    1. Ensure that "Use the native Windows Secure Channel library" is selected and click on "Next".
    1. Ensure that "Checkout Windows-style, commit Unix-style line endings" is selected and click on "Next".
    1. Ensure that "Use Windows' default console window" is selected and click on "Next".
