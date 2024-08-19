@@ -46,7 +46,7 @@ There are several widely used repository hosting services using Git, such as
 - Imperial has a GitHub Organisation any Imperial staff or student can join. You don't
   need to join for this course but instructions to do so can be found [here][ic-github].
 
-[ic-github]: https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/research-support-systems/github/working-with-githubcom/
+[ic-github]: https://servicemgt.imperial.ac.uk/ask?id=kb_article_view&sysparm_article=KB0012428
 
 ### Set up your GitHub account
 
