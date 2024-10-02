@@ -109,23 +109,23 @@ Please follow the relevant instructions depending on your operating system.
 
 ### GitHub
 
-This course will make use of [GitHub](https://github.com), an online repository hosting 
+This course will make use of [GitHub](https://github.com), an online repository hosting
 site. If you do not already have a GitHub account, you may wish to create one ahead of
 time, although this will be covered during the course.
 
-Communicating with GitHub securely requires a means of 
+Communicating with GitHub securely requires a means of
 [authentication](https://docs.github.com/en/authentication). We will walk through
 creating a personal access token (PAT) during the course, but you may wish to look at
 this ahead of time. Alternatively, if you already have an SSH key, you may wish to add
-this to your GitHub account. 
+this to your GitHub account.
 
 ### GitKraken
 
 This course will demonstrate the use of [GitKraken](https://gitkraken.com/), a desktop
-application for using git. There are a number of other similar applications, such as 
+application for using git. There are a number of other similar applications, such as
 GitHub Desktop, however, we will use GitKraken as it is cross-platform and therefore
-accessible for all course attendees. If you already have a preferred desktop git 
-application, feel free to continue using that, but you may wish to compare the 
+accessible for all course attendees. If you already have a preferred desktop git
+application, feel free to continue using that, but you may wish to compare the
 functionality with your current choice.
 
 {% include links.md %}
