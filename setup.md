@@ -3,9 +3,13 @@ title: Setup
 ---
 
 Completing this course requires you to have access to a computer with Git
-installed. This course is currently being delivered remotely so please make sure
+installed. This course is occasionally delivered remotely so please make sure
 you have access to a suitable computer. All attendees should download the zip
 file and, if not already available, install Git.
+
+A prerequisite for the course is familiarity with the terminal, as well as some
+knowledge of programming. Please make sure you are comfortable using the terminal
+and writing code in a plaintext editor.
 
 ## Downloading the Zip File
 
