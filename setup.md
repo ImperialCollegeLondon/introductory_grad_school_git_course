@@ -23,7 +23,7 @@ Please follow the relevant instructions depending on your operating system.
 1. Run the installer and follow the steps below:
    1. Click on "Next" four times (two times if you've previously installed Git). You don't need to change anything in the Information, location, components, and start menu screens.
    1. From the dropdown menu select "Use the nano editor by default" and click on "Next".
-   1. Select “Override the default branch name for new repositories” and use inclusive terms like “main” (Refer: [The new Git default branch name(https://about.gitlab.com/blog/2021/03/10/new-git-default-branch-name/))
+   1. Select “Override the default branch name for new repositories” and use inclusive terms like “main” (Refer: [The new Git default branch name](https://about.gitlab.com/blog/2021/03/10/new-git-default-branch-name/))
    1. Ensure that "Git from the command line and also from 3rd-party software" is selected and click on "Next". (If you don't do this Git Bash will not work properly, requiring you to remove the Git Bash installation, re-run the installer and to select the "Git from the command line and also from 3rd-party software" option.)
    1. Ensure that "Use bundled OpenSSH" is selected and click on "Next".
    1. Ensure that "Use the native Windows Secure Channel library" is selected and click on "Next".
@@ -43,33 +43,35 @@ Please follow the relevant instructions depending on your operating system.
 This will provide you with both Git and Bash via the program Git Bash. You
 should be able to launch Git Bash from the Start Menu. Within the window that
 launches enter the command `git --version` and press enter. You should see
-output similar to the below:
-```
-git version 2.40.0.windows-1
-```
+output similar to that below:
 
-### MacOS
+~~~ bash
+git version 2.40.0.windows-1
+~~~
+
+### macOS
 
 Apple provide a suite of UNIX-style command line tools that includes git. Install
 them by opening the "Terminal" app and running:
 
-```bash
+~~~ bash
 $ xcode-select --install
 xcode-select: note: install requested for command line developer tools
-```
+~~~
 
-This will open  dialog that asks for your confirmation to install the tools. If
+This will open a dialog that asks for your confirmation to install the tools. If
 it does not open a dialog, it may be because it is already installed (the error
 message will be clear).
 
 To check the installation was successful open the "Terminal" app. In the window
 that launches enter the command `git --version` and press enter. You should see
-output similar to the below:
-```
-git version 2.37.1 (Apple Git-137.1)
-```
+output similar to that below:
 
-**If the above does not work**, you may have and older version of MacOS.
+~~~ bash
+git version 2.37.1 (Apple Git-137.1)
+~~~
+
+**If the above does not work**, you may have and older version of macOS.
 Try the following: install Git for Mac by downloading and running the
 most recent "mavericks" installer from [this list][installer-list]. Because this
 installer is not signed by the developer, you may have to right click (control
@@ -85,14 +87,38 @@ here][snow-leopard].
 ### Linux
 
 If Git is not already available on your machine you can try to install it via
-your distributions package manager. For Debian/Ubuntu run `sudo apt-get install
+your distribution's package manager. For Debian/Ubuntu run `sudo apt-get install
 git` and for Fedora run `sudo dnf install git`.
 
 To check the installation was successful open a new terminal. In the window that
 launches enter the command `git --version` and press enter. You should see
 output similar to the below:
-```
+
+~~~ bash
 git version 2.40.0
-```
+~~~
+
+## Optional additional setup
+
+### GitHub
+
+This course will make use of [GitHub](https://github.com), an online repository hosting
+site. If you do not already have a GitHub account, you may wish to create one ahead of
+time, although this will be covered during the course.
+
+Communicating with GitHub securely requires a means of
+[authentication](https://docs.github.com/en/authentication). We will walk through
+creating a personal access token (PAT) during the course, but you may wish to look at
+this ahead of time. Alternatively, if you already have an SSH key, you may wish to add
+this to your GitHub account.
+
+### GitKraken
+
+This course will demonstrate the use of [GitKraken](https://gitkraken.com/), a desktop
+application for using git. There are a number of other similar applications, such as
+GitHub Desktop, however, we will use GitKraken as it is cross-platform and therefore
+accessible for all course attendees. If you already have a preferred desktop git
+application, feel free to continue using that, but you may wish to compare the
+functionality with your current choice.
 
 {% include links.md %}
