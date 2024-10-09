@@ -39,12 +39,12 @@ Please follow the relevant instructions depending on your operating system.
 >    1. Type the following line into the command prompt window exactly as shown: `setx HOME "%USERPROFILE%"`
 >    1. Press [Enter], you should see `SUCCESS: Specified value was saved`.
 >    1. Quit command prompt by typing `exit` then pressing [Enter]
-> 
+>
 > This will provide you with both Git and Bash via the program Git Bash. You
 > should be able to launch Git Bash from the Start Menu. Within the window that
 > launches enter the command `git --version` and press enter. You should see
 > output similar to that below:
-> 
+>
 > ~~~ bash
 > git version 2.40.0.windows-1
 > ~~~
@@ -52,28 +52,28 @@ Please follow the relevant instructions depending on your operating system.
 {: .solution}
 
 > ## macOS
-> 
+>
 > Apple provide a suite of UNIX-style command line tools that includes git. Install
 > them by opening the "Terminal" app and running:
-> 
+>
 > ~~~ bash
 > $ xcode-select --install
 > xcode-select: note: install requested for command line developer tools
 > ~~~
-> 
+>
 > This will open a dialog that asks for your confirmation to install the tools. If
 > it does not open a dialog, it may be because it is already installed (the error
 > message will be clear).
-> 
+>
 > To check the installation was successful open the "Terminal" app. In the window
 > that launches enter the command `git --version` and press enter. You should see
 > output similar to that below:
-> 
+>
 > ~~~ bash
 > git version 2.37.1 (Apple Git-137.1)
 > ~~~
 > {: .output}
-> 
+>
 > **If the above does not work**, you may have and older version of macOS.
 > Try the following: install Git for Mac by downloading and running the
 > most recent "mavericks" installer from [this list](http://sourceforge.net/projects/git-osx-installer/files/). Because this
@@ -85,15 +85,15 @@ Please follow the relevant instructions depending on your operating system.
 {: .solution}
 
 > ## Linux
-> 
+>
 > If Git is not already available on your machine you can try to install it via
 > your distribution's package manager. For Debian/Ubuntu run `sudo apt-get install
 > git` and for Fedora run `sudo dnf install git`.
-> 
+>
 > To check the installation was successful open a new terminal. In the window that
 > launches enter the command `git --version` and press enter. You should see
 > output similar to the below:
-> 
+>
 > ~~~ bash
 > git version 2.40.0
 > ~~~
