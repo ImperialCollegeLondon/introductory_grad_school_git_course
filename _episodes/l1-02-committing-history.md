@@ -19,7 +19,7 @@ keypoints:
 - Setup Git with your details using `git config --global user.name "FIRST_NAME LAST_NAME"` and `git config --global user.email "email@example.com"`
 - A Git repository is the record of the history of a project and can be created with `git init`
 - Git records changes to files as commits
-- Git must be explicitly told which changes to include as part of commit (known as staging changes) with `git add [file]...`
+- Git must be explicitly told which changes to include as part of commit (known as staging changes) with `git stage [file]...`
 - Staged changes can be stored in a commit with `git commit -m "commit message"`
 - You can check which files have been changed and/or staged with `git status`
 - You can see the full changes made to files with `git diff` for unstaged files and `git diff --staged`
@@ -214,19 +214,19 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 {: .output}
+
 This is a very useful command that we will use a lot. It should be your first
 port of call to figure out the current state of a repository and often suggests
 commands that can be used for different tasks.
 
-Don't worry about all the output for now, the important bit is that the 2 files
-we already have are untracked in the repository (directory). We want to **add
-the files** to the list of files tracked by Git. Git does not track any files
-automatically and you need make a conscious decision to add a file. Let's do
-what Git hints at:
+Don't worry about all the output for now, the important bit is that the two files we
+already have are untracked in the repository (directory). Git does not track any files
+automatically so we need to do this explicitly. To do this, we first add the files to
+Git's staging area, like so:
 
 ```
-git add ingredients.md
-git add instructions.md
+git stage ingredients.md
+git stage instructions.md
 git status
 ```
 {: .commands}
@@ -245,8 +245,15 @@ Changes to be committed:
 {: .output}
 
 Now this change is ***staged*** and ready to be committed (note that we could
-have saved some typing here with the command `git add ingredients.md
+have saved some typing here with the command `git stage ingredients.md
 instructions.md`).
+
+> ## `git stage` vs `git add`
+>
+> Note that you will sometimes see the `git stage` command written as `git add` (e.g. in
+> the command output above). These commands are completely equivalent, but in this
+> course we will use `git stage` throughout for consistency.
+{: .callout}
 
 Let us now commit the change to the repository, with a brief but informative
 description of the change:
@@ -313,7 +320,7 @@ this in more detail it's useful to know that git has three 'areas'.
 * The Working Directory (or Working Tree)
   * This is the copy of the files that you actually work with in a normal way.
 * The Staging Area (or index)
-  * When you run `git add` a copy of a file is taken from the working tree and
+  * When you run `git stage` a copy of a file is taken from the working tree and
     placed here.
   * New (untracked) files must be added to the staging area before git will
     track them.
