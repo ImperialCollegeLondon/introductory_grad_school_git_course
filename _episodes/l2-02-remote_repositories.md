@@ -136,7 +136,7 @@ local one out of it or the other way around, the steps are different.
 > > ## Solution
 > >
 > > ```bash
-> > git add README.md
+> > git stage README.md
 > > git commit -m COMMIT_MESSAGE
 > > git push
 > > ```

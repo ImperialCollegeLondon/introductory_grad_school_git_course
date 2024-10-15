@@ -206,7 +206,7 @@ Now upload your changes to GitHub by pressing the "Push" button.
 
 | Git command  | GitKraken equivalent                                                                    |
 |--------------|-----------------------------------------------------------------------------------------|
-| `git add`    | Click on pencil icon by changes, then "Stage" or "Stage all changes"                    |
+| `git stage`  | Click on pencil icon by changes, then "Stage" or "Stage all changes"                    |
 | `git commit` | After staging, enter a commit message then click "Commit changes"                       |
 | `git push`   | Click the "Push" button in the toolbar                                                  |
 | `git revert` | Right-click on commit and click "Revert commit"                                         |
